@@ -477,3 +477,71 @@
 2025-06-11 22:17:07,781 - token_manager - INFO - Token needs refresh
 2025-06-11 22:17:07,781 - token_manager - INFO - Attempting to use refresh token
 2025-06-11 22:17:07,782 - token_manager - INFO - Refreshing token for SBXID_009850
+2025-06-11 22:17:10,848 - token_manager - ERROR - Failed to refresh token: 401 - {"error":{"code":2500,"message":"Invalid client secret"}}
+2025-06-11 22:17:10,848 - token_manager - ERROR - Unexpected error refreshing token: Failed to refresh token: 401 - {"error":{"code":2500,"message":"Invalid client secret"}} - Details: {'status_code': 401}
+2025-06-11 22:17:10,849 - token_manager - WARNING - Refresh token failed, trying client credentials
+2025-06-11 22:17:10,850 - token_manager - INFO - Getting completely new token
+2025-06-11 22:17:10,851 - token_manager - INFO - Fetching new token for SBXID_009850
+2025-06-11 22:17:11,186 - token_manager - INFO - New token fetched successfully for SBXID_009850
+2025-06-11 22:17:11,191 - token_manager - INFO - New token fetched and saved
+2025-06-11 22:17:11,192 - token_manager - INFO - Periodic token check completed successfully
+2025-06-11 22:17:41,838 - middlewares - INFO - Request started: GET /docs
+2025-06-11 22:17:41,840 - middlewares - INFO - Request completed: GET /docs - Status: 200 - Time: 0.002s
+2025-06-11 22:17:42,229 - middlewares - INFO - Request started: GET /openapi.json
+2025-06-11 22:17:42,249 - middlewares - INFO - Request completed: GET /openapi.json - Status: 200 - Time: 0.020s
+2025-06-11 22:18:13,555 - middlewares - INFO - Request started: POST /encryption/secure-encrypt
+2025-06-11 22:18:13,564 - encryption_routes - INFO - Using secure-encrypt endpoint
+2025-06-11 22:18:13,565 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 22:18:13,567 - token_manager - INFO - Token valid for 1138 seconds
+2025-06-11 22:18:13,631 - middlewares - INFO - Request completed: POST /encryption/secure-encrypt - Status: 200 - Time: 0.076s
+2025-06-11 22:18:22,534 - middlewares - INFO - Request started: POST /encryption/secure-encrypt
+2025-06-11 22:18:22,535 - encryption_routes - INFO - Using secure-encrypt endpoint
+2025-06-11 22:18:22,536 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 22:18:22,537 - token_manager - INFO - Token valid for 1129 seconds
+2025-06-11 22:18:22,538 - middlewares - INFO - Request completed: POST /encryption/secure-encrypt - Status: 200 - Time: 0.004s
+2025-06-11 22:19:20,134 - middlewares - INFO - Request started: POST /token
+2025-06-11 22:19:20,135 - token_manager - INFO - Creating new token for SBXID_009850
+2025-06-11 22:19:20,136 - token_manager - INFO - Fetching new token for SBXID_009850
+2025-06-11 22:19:20,670 - token_manager - INFO - New token fetched successfully for SBXID_009850
+2025-06-11 22:19:20,674 - token_manager - INFO - Token saved to abdm_token.json
+2025-06-11 22:19:20,675 - middlewares - INFO - Request completed: POST /token - Status: 200 - Time: 0.541s
+2025-06-11 22:19:48,586 - middlewares - INFO - Request started: POST /encryption/encrypt
+2025-06-11 22:19:48,590 - encryption_routes - INFO - Encrypting data
+2025-06-11 22:19:48,591 - encryption_routes - INFO - Description: cxc
+2025-06-11 22:19:48,592 - encryption_routes - INFO - Data encrypted successfully
+2025-06-11 22:19:48,593 - middlewares - INFO - Request completed: POST /encryption/encrypt - Status: 200 - Time: 0.007s
+2025-06-11 22:20:12,176 - middlewares - INFO - Request started: POST /encryption/encrypt
+2025-06-11 22:20:12,178 - encryption_routes - INFO - Encrypting data
+2025-06-11 22:20:12,178 - encryption_routes - INFO - Description: cxc
+2025-06-11 22:20:12,179 - encryption_routes - INFO - Data encrypted successfully
+2025-06-11 22:20:12,180 - middlewares - INFO - Request completed: POST /encryption/encrypt - Status: 200 - Time: 0.004s
+2025-06-11 22:23:06,952 - middlewares - INFO - Request started: POST /encryption/secure-encrypt
+2025-06-11 22:23:06,958 - encryption_routes - INFO - Using secure-encrypt endpoint
+2025-06-11 22:23:06,959 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 22:23:06,989 - token_manager - INFO - Token valid for 974 seconds
+2025-06-11 22:23:06,991 - middlewares - INFO - Request completed: POST /encryption/secure-encrypt - Status: 200 - Time: 0.038s
+2025-06-11 22:23:07,448 - middlewares - INFO - Request started: POST /encryption/secure-encrypt
+2025-06-11 22:23:07,449 - encryption_routes - INFO - Using secure-encrypt endpoint
+2025-06-11 22:23:07,449 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 22:23:07,450 - token_manager - INFO - Token valid for 973 seconds
+2025-06-11 22:23:07,452 - middlewares - INFO - Request completed: POST /encryption/secure-encrypt - Status: 200 - Time: 0.004s
+2025-06-11 22:32:11,205 - token_manager - INFO - Periodic token check triggered
+2025-06-11 22:32:11,208 - token_manager - INFO - Token valid for 429 seconds
+2025-06-11 22:32:11,209 - token_manager - INFO - Periodic token check completed successfully
+2025-06-11 22:39:56,123 - middlewares - INFO - Request started: GET /docs
+2025-06-11 22:39:56,125 - middlewares - INFO - Request completed: GET /docs - Status: 200 - Time: 0.002s
+2025-06-11 22:39:56,337 - middlewares - INFO - Request started: GET /openapi.json
+2025-06-11 22:39:56,340 - middlewares - INFO - Request completed: GET /openapi.json - Status: 200 - Time: 0.001s
+2025-06-11 22:47:11,199 - token_manager - INFO - Periodic token check triggered
+2025-06-11 22:47:11,200 - token_manager - INFO - Token expired or expiring soon. Time left: 0 seconds
+2025-06-11 22:47:11,200 - token_manager - INFO - Token needs refresh
+2025-06-11 22:47:11,200 - token_manager - INFO - Attempting to use refresh token
+2025-06-11 22:47:11,201 - token_manager - INFO - Refreshing token for SBXID_009850
+2025-06-11 22:47:11,869 - token_manager - ERROR - Failed to refresh token: 401 - {"error":{"code":2500,"message":"Invalid client secret"}}
+2025-06-11 22:47:11,869 - token_manager - ERROR - Unexpected error refreshing token: Failed to refresh token: 401 - {"error":{"code":2500,"message":"Invalid client secret"}} - Details: {'status_code': 401}
+2025-06-11 22:47:11,870 - token_manager - WARNING - Refresh token failed, trying client credentials
+2025-06-11 22:47:11,870 - token_manager - INFO - Getting completely new token
+2025-06-11 22:47:11,870 - token_manager - INFO - Fetching new token for SBXID_009850
+2025-06-11 22:47:12,702 - token_manager - INFO - New token fetched successfully for SBXID_009850
+2025-06-11 22:47:12,705 - token_manager - INFO - New token fetched and saved
+2025-06-11 22:47:12,706 - token_manager - INFO - Periodic token check completed successfully
