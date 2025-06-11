@@ -633,3 +633,74 @@
 2025-06-11 23:08:51,059 - token_manager - INFO - Periodic token check triggered
 2025-06-11 23:08:51,061 - token_manager - INFO - Token valid for 601 seconds
 2025-06-11 23:08:51,061 - token_manager - INFO - Periodic token check completed successfully
+2025-06-11 23:08:53,778 - middlewares - INFO - Request started: GET /docs
+2025-06-11 23:08:53,779 - middlewares - INFO - Request completed: GET /docs - Status: 200 - Time: 0.003s
+2025-06-11 23:08:54,081 - middlewares - INFO - Request started: GET /openapi.json
+2025-06-11 23:08:54,098 - middlewares - INFO - Request completed: GET /openapi.json - Status: 200 - Time: 0.017s
+2025-06-11 23:08:58,878 - middlewares - INFO - Request started: GET /docs
+2025-06-11 23:08:58,882 - middlewares - INFO - Request completed: GET /docs - Status: 200 - Time: 0.004s
+2025-06-11 23:08:59,040 - middlewares - INFO - Request started: GET /openapi.json
+2025-06-11 23:08:59,042 - middlewares - INFO - Request completed: GET /openapi.json - Status: 200 - Time: 0.001s
+2025-06-11 23:09:16,757 - middlewares - INFO - Request started: POST /token
+2025-06-11 23:09:16,759 - token_manager - INFO - Creating new token for SBXID_009850
+2025-06-11 23:09:16,759 - token_manager - INFO - Fetching new token for SBXID_009850
+2025-06-11 23:09:17,240 - token_manager - INFO - New token fetched successfully for SBXID_009850
+2025-06-11 23:09:17,243 - token_manager - INFO - Token saved to abdm_token.json
+2025-06-11 23:09:17,244 - middlewares - INFO - Request completed: POST /token - Status: 200 - Time: 0.487s
+2025-06-11 23:09:40,924 - middlewares - INFO - Request started: POST /verification/initiate-aadhaar-otp
+2025-06-11 23:09:40,934 - verification_routes - INFO - Initiating Aadhaar OTP verification
+2025-06-11 23:09:41,002 - token_manager - INFO - Token valid for 1176 seconds
+2025-06-11 23:09:41,002 - verification_routes - INFO - Sending request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/request/otp
+2025-06-11 23:09:43,197 - verification_routes - INFO - OTP initiation successful, txnId: 3f0a6b7d-ebd9-44ec-9864-569ea9d20202
+2025-06-11 23:09:43,202 - middlewares - INFO - Request completed: POST /verification/initiate-aadhaar-otp - Status: 200 - Time: 2.278s
+2025-06-11 23:10:51,191 - middlewares - INFO - Request started: POST /encryption/encrypt
+2025-06-11 23:10:51,198 - encryption_routes - INFO - Encrypting data
+2025-06-11 23:10:51,201 - encryption_routes - INFO - Description: string
+2025-06-11 23:10:51,205 - encryption_routes - INFO - Data encrypted successfully
+2025-06-11 23:10:51,207 - middlewares - INFO - Request completed: POST /encryption/encrypt - Status: 200 - Time: 0.018s
+2025-06-11 23:13:49,812 - middlewares - INFO - Request started: POST /verification/initiate-aadhaar-otp
+2025-06-11 23:13:49,818 - verification_routes - INFO - Initiating Aadhaar OTP verification
+2025-06-11 23:13:49,823 - token_manager - INFO - Token valid for 928 seconds
+2025-06-11 23:13:49,825 - verification_routes - INFO - Sending request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/request/otp
+2025-06-11 23:13:55,550 - verification_routes - INFO - OTP initiation successful, txnId: 20e87e55-60bf-4286-8334-f3ea1c10e462
+2025-06-11 23:13:55,555 - middlewares - INFO - Request completed: POST /verification/initiate-aadhaar-otp - Status: 200 - Time: 5.743s
+2025-06-11 23:14:15,994 - middlewares - INFO - Request started: POST /encryption/encrypt
+2025-06-11 23:14:15,997 - encryption_routes - INFO - Encrypting data
+2025-06-11 23:14:15,997 - encryption_routes - INFO - Description: string
+2025-06-11 23:14:15,998 - encryption_routes - INFO - Data encrypted successfully
+2025-06-11 23:14:15,999 - middlewares - INFO - Request completed: POST /encryption/encrypt - Status: 200 - Time: 0.005s
+2025-06-11 23:23:51,077 - token_manager - INFO - Periodic token check triggered
+2025-06-11 23:23:51,080 - token_manager - INFO - Token valid for 326 seconds
+2025-06-11 23:23:51,081 - token_manager - INFO - Periodic token check completed successfully
+2025-06-11 23:38:51,085 - token_manager - INFO - Periodic token check triggered
+2025-06-11 23:38:51,089 - token_manager - INFO - Token expired or expiring soon. Time left: 0 seconds
+2025-06-11 23:38:51,089 - token_manager - INFO - Token needs refresh
+2025-06-11 23:38:51,090 - token_manager - INFO - Attempting to use refresh token
+2025-06-11 23:38:51,090 - token_manager - INFO - Refreshing token for SBXID_009850
+2025-06-11 23:38:52,248 - token_manager - ERROR - Failed to refresh token: 401 - {"error":{"code":2500,"message":"Invalid client secret"}}
+2025-06-11 23:38:52,248 - token_manager - ERROR - Unexpected error refreshing token: Failed to refresh token: 401 - {"error":{"code":2500,"message":"Invalid client secret"}} - Details: {'status_code': 401}
+2025-06-11 23:38:52,250 - token_manager - WARNING - Refresh token failed, trying client credentials
+2025-06-11 23:38:52,252 - token_manager - INFO - Getting completely new token
+2025-06-11 23:38:52,252 - token_manager - INFO - Fetching new token for SBXID_009850
+2025-06-11 23:38:52,886 - token_manager - INFO - New token fetched successfully for SBXID_009850
+2025-06-11 23:38:52,891 - token_manager - INFO - New token fetched and saved
+2025-06-11 23:38:52,892 - token_manager - INFO - Periodic token check completed successfully
+2025-06-11 23:53:52,901 - token_manager - INFO - Periodic token check triggered
+2025-06-11 23:53:52,927 - token_manager - INFO - Token valid for 300 seconds
+2025-06-11 23:53:52,928 - token_manager - INFO - Periodic token check completed successfully
+2025-06-12 00:08:52,954 - token_manager - INFO - Periodic token check triggered
+2025-06-12 00:08:52,959 - token_manager - INFO - Token expired or expiring soon. Time left: 0 seconds
+2025-06-12 00:08:52,960 - token_manager - INFO - Token needs refresh
+2025-06-12 00:08:52,961 - token_manager - INFO - Attempting to use refresh token
+2025-06-12 00:08:52,962 - token_manager - INFO - Refreshing token for SBXID_009850
+2025-06-12 00:08:53,445 - token_manager - ERROR - Failed to refresh token: 401 - {"error":{"code":2500,"message":"Invalid client secret"}}
+2025-06-12 00:08:53,446 - token_manager - ERROR - Unexpected error refreshing token: Failed to refresh token: 401 - {"error":{"code":2500,"message":"Invalid client secret"}} - Details: {'status_code': 401}
+2025-06-12 00:08:53,447 - token_manager - WARNING - Refresh token failed, trying client credentials
+2025-06-12 00:08:53,449 - token_manager - INFO - Getting completely new token
+2025-06-12 00:08:53,450 - token_manager - INFO - Fetching new token for SBXID_009850
+2025-06-12 00:08:54,150 - token_manager - INFO - New token fetched successfully for SBXID_009850
+2025-06-12 00:08:54,156 - token_manager - INFO - New token fetched and saved
+2025-06-12 00:08:54,157 - token_manager - INFO - Periodic token check completed successfully
+2025-06-12 00:23:54,162 - token_manager - INFO - Periodic token check triggered
+2025-06-12 00:23:54,172 - token_manager - INFO - Token valid for 300 seconds
+2025-06-12 00:23:54,173 - token_manager - INFO - Periodic token check completed successfully
