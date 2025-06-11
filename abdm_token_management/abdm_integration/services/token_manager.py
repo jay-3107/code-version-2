@@ -46,13 +46,21 @@ class ABDMTokenManager:
             return True
 
     def refresh_token(self, refresh_token, client_id):
-        """Refresh an access token using refresh token"""
+        """Refresh an access token using refresh token with proper headers"""
         try:
+            import uuid
+            from datetime import datetime
+            
             self.logger.info(f"Refreshing token for {client_id}")
             
+            # Set up headers exactly as shown in Postman
             headers = {
-                'accept': 'application/json',
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'REQUEST-ID': str(uuid.uuid4()),  # Generate a new UUID for each request
+                'TIMESTAMP': datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%S.%fZ'),
+                'X-CM-ID': 'sbx',
+                'Accept': '*/*',
+                'Connection': 'keep-alive'
             }
             
             payload = {
@@ -88,20 +96,31 @@ class ABDMTokenManager:
             raise TokenRefreshError(error_msg, {"exception": str(e)})
 
     def fetch_new_token(self, client_id, client_secret):
-        """Fetch a completely new token"""
+        """Fetch a completely new token with proper headers matching ABDM API requirements"""
         try:
+            import uuid
+            from datetime import datetime
+            
             self.logger.info(f"Fetching new token for {client_id}")
             
+            # Set up headers exactly as shown in Postman
             headers = {
-                'accept': 'application/json',
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'REQUEST-ID': str(uuid.uuid4()),  # Generate a new UUID for each request
+                'TIMESTAMP': datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%S.%fZ'),
+                'X-CM-ID': 'sbx',
+                'Accept': '*/*',
+                'Connection': 'keep-alive'
             }
             
+            # Request payload
             payload = {
                 'clientId': client_id,
                 'clientSecret': client_secret,
                 'grantType': 'client_credentials'
             }
+            
+            self.logger.debug(f"Sending token request with headers: {headers}")
             
             response = requests.post(
                 settings.ABDM_SESSION_API,
@@ -223,10 +242,13 @@ class ABDMTokenManager:
                 
             self.logger.info(f"Token saved to {settings.TOKEN_FILE_PATH}")
             
+            # Return in the same format as ABDM API
             return {
-                "access_token": token_data["accessToken"],
-                "token_type": token_data["tokenType"],
-                "expires_in": token_data["expiresIn"]
+                "accessToken": token_data["accessToken"],
+                "tokenType": token_data["tokenType"],
+                "expiresIn": token_data["expiresIn"],
+                "refreshExpiresIn": token_data.get("refreshExpiresIn", 1800),
+                "refreshToken": token_data.get("refreshToken", "")
             }
                 
         except (TokenCreationError) as e:
@@ -288,20 +310,22 @@ class ABDMTokenManager:
             raise
 
     def get_headers(self):
-        """Get the authorization headers for API calls"""
+        """Get the authorization headers for API calls to ABDM"""
         try:
             # Get valid token (refreshing if needed)
             saved_data = self.get_valid_token()
             
             token_data = saved_data["token_data"]
+            import uuid
+            from datetime import datetime
             
             headers = {
-                'accept': 'application/json',
                 'Content-Type': 'application/json',
                 'Authorization': f"Bearer {token_data['accessToken']}",
-                'User-Agent': 'ABDMTokenManager/1.0',
+                'REQUEST-ID': str(uuid.uuid4()),  # Generate a new UUID for each request
+                'TIMESTAMP': datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%S.%fZ'),
+                'X-CM-ID': 'sbx',
                 'Accept': '*/*',
-                'Accept-Encoding': 'gzip, deflate, br',
                 'Connection': 'keep-alive'
             }
             

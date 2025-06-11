@@ -41,3 +41,11 @@ class EncryptionError(ABDMBaseException):
     """Exception raised for encryption-related errors"""
     def __init__(self, message="Encryption failed", details=None):
         super().__init__(message, details)
+        
+        
+class PublicKeyError(Exception):
+    """Exception raised for errors in the public key operations"""
+    def __init__(self, message, details=None):
+        self.message = message
+        self.details = details or {}
+        super().__init__(self.message)

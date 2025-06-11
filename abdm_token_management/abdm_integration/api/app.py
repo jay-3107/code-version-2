@@ -1,15 +1,15 @@
-# app.py - Creates and configures FastAPI app
-
+# api/app.py
 import asyncio
 from fastapi import FastAPI, Request, status
 from fastapi.responses import JSONResponse
 from fastapi.exceptions import RequestValidationError
 
-from api.routes import token_routes, health_routes
-from api.middlewares import setup_middlewares
+# Import routes directly
+from .routes import token_routes, health_routes, encryption_routes
+from .middlewares import setup_middlewares
 from config.settings import settings
 from config.logging_config import setup_logger
-from utils.exceptions import TokenNotFoundError, TokenRefreshError, TokenCreationError, ABDMApiError
+from utils.exceptions import TokenNotFoundError, TokenRefreshError, TokenCreationError, ABDMApiError, PublicKeyError
 
 # Configure logging
 logger = setup_logger('api')
@@ -27,7 +27,7 @@ def create_app() -> FastAPI:
     # Add middlewares
     app = setup_middlewares(app)
     
-    # Error handler for custom exceptions
+    # Error handlers
     @app.exception_handler(TokenNotFoundError)
     async def token_not_found_exception_handler(request, exc):
         logger.warning(f"TokenNotFoundError: {str(exc)}")
@@ -60,6 +60,14 @@ def create_app() -> FastAPI:
             status_code=status_code,
             content={"detail": str(exc), "error_type": "abdm_api_error"}
         )
+        
+    @app.exception_handler(PublicKeyError)
+    async def public_key_exception_handler(request, exc):
+        logger.warning(f"PublicKeyError: {str(exc)}")
+        return JSONResponse(
+            status_code=500,
+            content={"detail": str(exc), "error_type": "public_key_error"}
+        )
 
     # Validation error handler
     @app.exception_handler(RequestValidationError)
@@ -70,11 +78,9 @@ def create_app() -> FastAPI:
             content={"detail": str(exc), "error_type": "validation_error"}
         )
     
-    # Include routers
-    app.include_router(token_routes.router)
-    app.include_router(health_routes.router)
-    
-    # Add other routers here as needed
-    # app.include_router(encryption_routes.router)
+    # Include routers directly - remove .router attribute
+    app.include_router(token_routes)
+    app.include_router(health_routes)
+    app.include_router(encryption_routes)
     
     return app

@@ -1,10 +1,10 @@
-# main.py - Main entry point for ABDM Integration API service
-
+# main.py
 import asyncio
 import uvicorn
 import sys
 from api.app import create_app
 from services.token_manager import ABDMTokenManager
+from services.public_key_service import ABDMPublicKeyManager  # Import the key manager
 from config.settings import settings
 from config.logging_config import setup_logger
 
@@ -14,8 +14,9 @@ logger = setup_logger('main')
 # Create FastAPI app
 app = create_app()
 
-# Initialize token manager 
+# Initialize managers
 token_manager = ABDMTokenManager()
+public_key_manager = ABDMPublicKeyManager()  # Initialize public key manager
 
 @app.on_event("startup")
 async def startup_event():
@@ -25,6 +26,11 @@ async def startup_event():
         # Start the periodic token refresh task
         asyncio.create_task(token_manager.start_periodic_refresh())
         logger.info("Periodic token refresh task started")
+        
+        # Fetch public key and start key refresh scheduler
+        public_key_manager.get_public_key()
+        public_key_manager.start_key_refresh_scheduler()
+        logger.info("Public key manager initialized")
     except Exception as e:
         logger.critical(f"Failed to start background tasks: {str(e)}")
         # Consider raising an exception here depending on how critical these tasks are

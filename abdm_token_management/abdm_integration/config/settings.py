@@ -1,5 +1,4 @@
-# settings.py - Core configuration parameters for ABDM integration
-
+# config/settings.py
 import os
 from datetime import timedelta
 
@@ -13,7 +12,17 @@ class Settings:
         self.TOKEN_REFRESH_INTERVAL = timedelta(minutes=15)  # Proactively check every 15 minutes
         
         # API endpoints
-        self.ABDM_SESSION_API = "https://dev.abdm.gov.in/api/hiecm/gateway/v3/sessions"
+        # Use environment variable if provided, otherwise use the default URL
+        self.ABDM_SESSION_API = os.environ.get(
+            "ABDM_SESSION_API", 
+            "https://dev.abdm.gov.in/gateway/v0.5/sessions"
+        )
+        
+        # Public key API endpoint
+        self.ABDM_PUBLIC_KEY_API = os.environ.get(
+            "ABDM_PUBLIC_KEY_API",
+            "https://abhasbx.abdm.gov.in/abha/api/v3/profile/public/certificate"
+        )
         
         # Server settings
         self.HOST = "0.0.0.0"

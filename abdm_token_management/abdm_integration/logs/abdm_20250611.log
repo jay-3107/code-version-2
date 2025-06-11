@@ -94,3 +94,386 @@
 2025-06-11 19:03:39,322 - token_manager - INFO - Periodic token check triggered
 2025-06-11 19:03:39,365 - token_manager - INFO - Token valid for 300 seconds
 2025-06-11 19:03:39,367 - token_manager - INFO - Periodic token check completed successfully
+2025-06-11 19:43:43,242 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 19:43:43,250 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 19:43:45,281 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 19:43:45,282 - certificate_manager - INFO - CertificateManager initialized
+2025-06-11 19:43:45,282 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 19:43:45,283 - certificate_manager - INFO - CertificateManager initialized
+2025-06-11 19:43:45,283 - encryption - INFO - ABDMEncryptor initialized
+2025-06-11 19:43:45,300 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 19:43:45,300 - certificate_manager - INFO - CertificateManager initialized
+2025-06-11 19:43:45,300 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 19:43:45,301 - certificate_manager - INFO - CertificateManager initialized
+2025-06-11 19:43:45,301 - encryption - INFO - ABDMEncryptor initialized
+2025-06-11 19:43:45,302 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 19:43:45,319 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 19:43:45,320 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 19:43:45,320 - certificate_manager - INFO - CertificateManager initialized
+2025-06-11 19:43:45,320 - scheduler_service - INFO - Scheduler service initialized
+2025-06-11 19:43:45,321 - main - INFO - Starting ABDM Integration API server on 0.0.0.0:8002
+2025-06-11 19:43:45,408 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 19:43:45,409 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 19:43:45,409 - certificate_manager - INFO - CertificateManager initialized
+2025-06-11 19:43:45,410 - scheduler_service - INFO - Scheduler service initialized
+2025-06-11 19:43:45,412 - main - INFO - Starting ABDM Integration API
+2025-06-11 19:43:45,413 - main - INFO - Periodic token refresh task started
+2025-06-11 19:43:45,413 - scheduler_service - ERROR - Error in scheduler: 'Job' object has no attribute 'months'
+2025-06-11 19:43:45,413 - scheduler_service - INFO - Scheduler service started
+2025-06-11 19:43:45,415 - certificate_manager - INFO - Fetching ABDM public certificate
+2025-06-11 19:43:45,416 - token_manager - INFO - Token expired or expiring soon. Time left: 0 seconds
+2025-06-11 19:43:45,416 - token_manager - INFO - Token needs refresh
+2025-06-11 19:43:45,416 - token_manager - INFO - Attempting to use refresh token
+2025-06-11 19:43:45,416 - token_manager - INFO - Refreshing token for SBXID_009850
+2025-06-11 19:43:47,235 - token_manager - ERROR - Failed to refresh token: 403 - Access Denied
+2025-06-11 19:43:47,236 - token_manager - ERROR - Unexpected error refreshing token: Failed to refresh token: 403 - Access Denied - Details: {'status_code': 403}
+2025-06-11 19:43:47,236 - token_manager - WARNING - Refresh token failed, trying client credentials
+2025-06-11 19:43:47,237 - token_manager - INFO - Getting completely new token
+2025-06-11 19:43:47,237 - token_manager - INFO - Fetching new token for SBXID_009850
+2025-06-11 19:43:47,957 - token_manager - ERROR - Failed to fetch token: 403 - Access Denied
+2025-06-11 19:43:47,958 - token_manager - ERROR - Unexpected error fetching token: Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403}
+2025-06-11 19:43:47,959 - token_manager - ERROR - Unexpected error in get_valid_token: Unexpected error fetching token: Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403} - Details: {'exception': "Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403}"}
+2025-06-11 19:43:47,961 - token_manager - ERROR - Exception getting headers: Unexpected error in get_valid_token: Unexpected error fetching token: Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403} - Details: {'exception': "Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403}"} - Details: {'exception': 'Unexpected error fetching token: Failed to fetch token: 403 - Access Denied - Details: {\'status_code\': 403} - Details: {\'exception\': "Failed to fetch token: 403 - Access Denied - Details: {\'status_code\': 403}"}'}
+2025-06-11 19:43:47,962 - certificate_manager - ERROR - Unexpected error fetching certificate: Unexpected error in get_valid_token: Unexpected error fetching token: Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403} - Details: {'exception': "Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403}"} - Details: {'exception': 'Unexpected error fetching token: Failed to fetch token: 403 - Access Denied - Details: {\'status_code\': 403} - Details: {\'exception\': "Failed to fetch token: 403 - Access Denied - Details: {\'status_code\': 403}"}'}
+2025-06-11 19:43:47,963 - main - CRITICAL - Failed to start background tasks: Unexpected error fetching certificate: Unexpected error in get_valid_token: Unexpected error fetching token: Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403} - Details: {'exception': "Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403}"} - Details: {'exception': 'Unexpected error fetching token: Failed to fetch token: 403 - Access Denied - Details: {\'status_code\': 403} - Details: {\'exception\': "Failed to fetch token: 403 - Access Denied - Details: {\'status_code\': 403}"}'}
+2025-06-11 19:43:47,966 - token_manager - INFO - Starting periodic token refresh task (every 0:15:00)
+2025-06-11 19:43:47,967 - token_manager - INFO - Periodic token check triggered
+2025-06-11 19:43:47,969 - token_manager - INFO - Token expired or expiring soon. Time left: 0 seconds
+2025-06-11 19:43:47,970 - token_manager - INFO - Token needs refresh
+2025-06-11 19:43:47,970 - token_manager - INFO - Attempting to use refresh token
+2025-06-11 19:43:47,972 - token_manager - INFO - Refreshing token for SBXID_009850
+2025-06-11 19:43:48,557 - token_manager - ERROR - Failed to refresh token: 403 - Access Denied
+2025-06-11 19:43:48,557 - token_manager - ERROR - Unexpected error refreshing token: Failed to refresh token: 403 - Access Denied - Details: {'status_code': 403}
+2025-06-11 19:43:48,558 - token_manager - WARNING - Refresh token failed, trying client credentials
+2025-06-11 19:43:48,559 - token_manager - INFO - Getting completely new token
+2025-06-11 19:43:48,559 - token_manager - INFO - Fetching new token for SBXID_009850
+2025-06-11 19:43:49,143 - token_manager - ERROR - Failed to fetch token: 403 - Access Denied
+2025-06-11 19:43:49,144 - token_manager - ERROR - Unexpected error fetching token: Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403}
+2025-06-11 19:43:49,145 - token_manager - ERROR - Unexpected error in get_valid_token: Unexpected error fetching token: Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403} - Details: {'exception': "Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403}"}
+2025-06-11 19:43:49,146 - token_manager - ERROR - Error during periodic token check: Unexpected error in get_valid_token: Unexpected error fetching token: Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403} - Details: {'exception': "Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403}"} - Details: {'exception': 'Unexpected error fetching token: Failed to fetch token: 403 - Access Denied - Details: {\'status_code\': 403} - Details: {\'exception\': "Failed to fetch token: 403 - Access Denied - Details: {\'status_code\': 403}"}'}
+2025-06-11 19:44:25,345 - middlewares - INFO - Request started: GET /docs
+2025-06-11 19:44:25,348 - middlewares - INFO - Request completed: GET /docs - Status: 200 - Time: 0.002s
+2025-06-11 19:44:25,712 - middlewares - INFO - Request started: GET /openapi.json
+2025-06-11 19:44:25,731 - middlewares - INFO - Request completed: GET /openapi.json - Status: 200 - Time: 0.020s
+2025-06-11 19:49:19,502 - middlewares - INFO - Request started: GET /certificates/info
+2025-06-11 19:49:19,505 - certificate_manager - INFO - Certificate age: 0 days
+2025-06-11 19:49:19,507 - middlewares - INFO - Request completed: GET /certificates/info - Status: 200 - Time: 0.006s
+2025-06-11 19:49:30,900 - middlewares - INFO - Request started: POST /certificates/refresh
+2025-06-11 19:49:30,903 - certificate_manager - INFO - Fetching ABDM public certificate
+2025-06-11 19:49:30,905 - token_manager - INFO - Token expired or expiring soon. Time left: 0 seconds
+2025-06-11 19:49:30,906 - token_manager - INFO - Token needs refresh
+2025-06-11 19:49:30,907 - token_manager - INFO - Attempting to use refresh token
+2025-06-11 19:49:30,908 - token_manager - INFO - Refreshing token for SBXID_009850
+2025-06-11 19:49:31,774 - token_manager - ERROR - Failed to refresh token: 403 - Access Denied
+2025-06-11 19:49:31,780 - token_manager - ERROR - Unexpected error refreshing token: Failed to refresh token: 403 - Access Denied - Details: {'status_code': 403}
+2025-06-11 19:49:31,792 - token_manager - WARNING - Refresh token failed, trying client credentials
+2025-06-11 19:49:31,792 - token_manager - INFO - Getting completely new token
+2025-06-11 19:49:31,810 - token_manager - INFO - Fetching new token for SBXID_009850
+2025-06-11 19:49:32,429 - token_manager - ERROR - Failed to fetch token: 403 - Access Denied
+2025-06-11 19:49:32,430 - token_manager - ERROR - Unexpected error fetching token: Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403}
+2025-06-11 19:49:32,431 - token_manager - ERROR - Unexpected error in get_valid_token: Unexpected error fetching token: Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403} - Details: {'exception': "Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403}"}
+2025-06-11 19:49:32,433 - token_manager - ERROR - Exception getting headers: Unexpected error in get_valid_token: Unexpected error fetching token: Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403} - Details: {'exception': "Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403}"} - Details: {'exception': 'Unexpected error fetching token: Failed to fetch token: 403 - Access Denied - Details: {\'status_code\': 403} - Details: {\'exception\': "Failed to fetch token: 403 - Access Denied - Details: {\'status_code\': 403}"}'}
+2025-06-11 19:49:32,434 - certificate_manager - ERROR - Unexpected error fetching certificate: Unexpected error in get_valid_token: Unexpected error fetching token: Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403} - Details: {'exception': "Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403}"} - Details: {'exception': 'Unexpected error fetching token: Failed to fetch token: 403 - Access Denied - Details: {\'status_code\': 403} - Details: {\'exception\': "Failed to fetch token: 403 - Access Denied - Details: {\'status_code\': 403}"}'}
+2025-06-11 19:49:32,435 - certificate_routes - ERROR - Certificate error: Unexpected error fetching certificate: Unexpected error in get_valid_token: Unexpected error fetching token: Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403} - Details: {'exception': "Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403}"} - Details: {'exception': 'Unexpected error fetching token: Failed to fetch token: 403 - Access Denied - Details: {\'status_code\': 403} - Details: {\'exception\': "Failed to fetch token: 403 - Access Denied - Details: {\'status_code\': 403}"}'}
+2025-06-11 19:49:32,439 - middlewares - INFO - Request completed: POST /certificates/refresh - Status: 500 - Time: 1.539s
+2025-06-11 19:50:37,113 - middlewares - INFO - Request started: POST /certificates/encrypt/aadhaar
+2025-06-11 19:50:37,169 - encryption - ERROR - Error loading public key: Unable to load PEM file. See https://cryptography.io/en/latest/faq/#why-can-t-i-import-my-pem-file for more details. MalformedFraming
+2025-06-11 19:50:37,171 - encryption - ERROR - Error encrypting data: Error loading public key: Unable to load PEM file. See https://cryptography.io/en/latest/faq/#why-can-t-i-import-my-pem-file for more details. MalformedFraming
+2025-06-11 19:50:37,172 - encryption - ERROR - Error encrypting Aadhaar: Error encrypting data: Error loading public key: Unable to load PEM file. See https://cryptography.io/en/latest/faq/#why-can-t-i-import-my-pem-file for more details. MalformedFraming
+2025-06-11 19:50:37,173 - certificate_routes - ERROR - Encryption error: Error encrypting Aadhaar: Error encrypting data: Error loading public key: Unable to load PEM file. See https://cryptography.io/en/latest/faq/#why-can-t-i-import-my-pem-file for more details. MalformedFraming
+2025-06-11 19:50:37,174 - middlewares - INFO - Request completed: POST /certificates/encrypt/aadhaar - Status: 400 - Time: 0.062s
+2025-06-11 19:52:13,310 - middlewares - INFO - Request started: POST /token
+2025-06-11 19:52:13,313 - token_manager - INFO - Creating new token for SBXID_009850
+2025-06-11 19:52:13,314 - token_manager - INFO - Fetching new token for SBXID_009850
+2025-06-11 19:52:13,839 - token_manager - ERROR - Failed to fetch token: 403 - Access Denied
+2025-06-11 19:52:13,840 - token_manager - ERROR - Unexpected error fetching token: Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403}
+2025-06-11 19:52:13,841 - token_routes - ERROR - Failed to create token: Unexpected error fetching token: Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403} - Details: {'exception': "Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403}"}
+2025-06-11 19:52:13,845 - middlewares - INFO - Request completed: POST /token - Status: 500 - Time: 0.536s
+2025-06-11 19:52:47,844 - middlewares - INFO - Request started: POST /token
+2025-06-11 19:52:47,844 - token_manager - INFO - Creating new token for SBXID_009850
+2025-06-11 19:52:47,845 - token_manager - INFO - Fetching new token for SBXID_009850
+2025-06-11 19:52:48,244 - token_manager - ERROR - Failed to fetch token: 403 - Access Denied
+2025-06-11 19:52:48,245 - token_manager - ERROR - Unexpected error fetching token: Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403}
+2025-06-11 19:52:48,246 - token_routes - ERROR - Failed to create token: Unexpected error fetching token: Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403} - Details: {'exception': "Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403}"}
+2025-06-11 19:52:48,248 - middlewares - INFO - Request completed: POST /token - Status: 500 - Time: 0.403s
+2025-06-11 19:58:49,150 - token_manager - INFO - Periodic token check triggered
+2025-06-11 19:58:49,153 - token_manager - INFO - Token expired or expiring soon. Time left: 0 seconds
+2025-06-11 19:58:49,154 - token_manager - INFO - Token needs refresh
+2025-06-11 19:58:49,155 - token_manager - INFO - Attempting to use refresh token
+2025-06-11 19:58:49,156 - token_manager - INFO - Refreshing token for SBXID_009850
+2025-06-11 19:58:51,553 - token_manager - ERROR - Failed to refresh token: 403 - Access Denied
+2025-06-11 19:58:51,555 - token_manager - ERROR - Unexpected error refreshing token: Failed to refresh token: 403 - Access Denied - Details: {'status_code': 403}
+2025-06-11 19:58:51,556 - token_manager - WARNING - Refresh token failed, trying client credentials
+2025-06-11 19:58:51,557 - token_manager - INFO - Getting completely new token
+2025-06-11 19:58:51,558 - token_manager - INFO - Fetching new token for SBXID_009850
+2025-06-11 19:58:52,028 - token_manager - ERROR - Failed to fetch token: 403 - Access Denied
+2025-06-11 19:58:52,029 - token_manager - ERROR - Unexpected error fetching token: Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403}
+2025-06-11 19:58:52,030 - token_manager - ERROR - Unexpected error in get_valid_token: Unexpected error fetching token: Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403} - Details: {'exception': "Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403}"}
+2025-06-11 19:58:52,032 - token_manager - ERROR - Error during periodic token check: Unexpected error in get_valid_token: Unexpected error fetching token: Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403} - Details: {'exception': "Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403}"} - Details: {'exception': 'Unexpected error fetching token: Failed to fetch token: 403 - Access Denied - Details: {\'status_code\': 403} - Details: {\'exception\': "Failed to fetch token: 403 - Access Denied - Details: {\'status_code\': 403}"}'}
+2025-06-11 20:13:52,041 - token_manager - INFO - Periodic token check triggered
+2025-06-11 20:13:52,049 - token_manager - INFO - Token expired or expiring soon. Time left: 0 seconds
+2025-06-11 20:13:52,050 - token_manager - INFO - Token needs refresh
+2025-06-11 20:13:52,050 - token_manager - INFO - Attempting to use refresh token
+2025-06-11 20:13:52,050 - token_manager - INFO - Refreshing token for SBXID_009850
+2025-06-11 20:13:52,554 - token_manager - ERROR - Failed to refresh token: 403 - Access Denied
+2025-06-11 20:13:52,556 - token_manager - ERROR - Unexpected error refreshing token: Failed to refresh token: 403 - Access Denied - Details: {'status_code': 403}
+2025-06-11 20:13:52,556 - token_manager - WARNING - Refresh token failed, trying client credentials
+2025-06-11 20:13:52,558 - token_manager - INFO - Getting completely new token
+2025-06-11 20:13:52,559 - token_manager - INFO - Fetching new token for SBXID_009850
+2025-06-11 20:13:53,723 - token_manager - ERROR - Failed to fetch token: 403 - Access Denied
+2025-06-11 20:13:53,723 - token_manager - ERROR - Unexpected error fetching token: Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403}
+2025-06-11 20:13:53,725 - token_manager - ERROR - Unexpected error in get_valid_token: Unexpected error fetching token: Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403} - Details: {'exception': "Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403}"}
+2025-06-11 20:13:53,733 - token_manager - ERROR - Error during periodic token check: Unexpected error in get_valid_token: Unexpected error fetching token: Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403} - Details: {'exception': "Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403}"} - Details: {'exception': 'Unexpected error fetching token: Failed to fetch token: 403 - Access Denied - Details: {\'status_code\': 403} - Details: {\'exception\': "Failed to fetch token: 403 - Access Denied - Details: {\'status_code\': 403}"}'}
+2025-06-11 20:18:17,323 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 20:18:17,327 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 20:18:17,438 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 20:18:17,439 - certificate_manager - INFO - CertificateManager initialized
+2025-06-11 20:18:17,439 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 20:18:17,439 - certificate_manager - INFO - CertificateManager initialized
+2025-06-11 20:18:17,440 - encryption - INFO - ABDMEncryptor initialized
+2025-06-11 20:18:17,449 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 20:18:17,449 - certificate_manager - INFO - CertificateManager initialized
+2025-06-11 20:18:17,449 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 20:18:17,451 - certificate_manager - INFO - CertificateManager initialized
+2025-06-11 20:18:17,451 - encryption - INFO - ABDMEncryptor initialized
+2025-06-11 20:18:17,452 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 20:18:17,461 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 20:18:17,462 - certificate_manager - INFO - CertificateManager initialized
+2025-06-11 20:18:17,462 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 20:18:17,475 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 20:18:17,475 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 20:18:17,476 - certificate_manager - INFO - CertificateManager initialized
+2025-06-11 20:18:17,476 - scheduler_service - INFO - Scheduler service initialized
+2025-06-11 20:18:17,478 - main - INFO - Starting ABDM Integration API server on 0.0.0.0:8002
+2025-06-11 20:18:17,567 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 20:18:17,568 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 20:18:17,568 - certificate_manager - INFO - CertificateManager initialized
+2025-06-11 20:18:17,569 - scheduler_service - INFO - Scheduler service initialized
+2025-06-11 20:18:17,570 - main - INFO - Starting ABDM Integration API
+2025-06-11 20:18:17,570 - main - CRITICAL - Failed to start background tasks: [WinError 3] The system cannot find the path specified: ''
+2025-06-11 20:19:20,244 - middlewares - INFO - Request started: GET /docs
+2025-06-11 20:19:20,246 - middlewares - INFO - Request completed: GET /docs - Status: 200 - Time: 0.002s
+2025-06-11 20:19:20,549 - middlewares - INFO - Request started: GET /openapi.json
+2025-06-11 20:19:20,567 - middlewares - INFO - Request completed: GET /openapi.json - Status: 200 - Time: 0.018s
+2025-06-11 20:19:56,248 - middlewares - INFO - Request started: POST /test/create-mock-token
+2025-06-11 20:19:56,249 - token_manager - INFO - Creating mock token for test_client
+2025-06-11 20:19:56,250 - token_manager - ERROR - Unexpected error creating mock token: [WinError 3] The system cannot find the path specified: ''
+2025-06-11 20:19:56,251 - test_routes - ERROR - Failed to create mock token: Unexpected error creating mock token: [WinError 3] The system cannot find the path specified: '' - Details: {'exception': "[WinError 3] The system cannot find the path specified: ''"}
+2025-06-11 20:19:56,251 - middlewares - INFO - Request completed: POST /test/create-mock-token - Status: 500 - Time: 0.003s
+2025-06-11 20:31:05,813 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 20:31:05,816 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 20:31:05,828 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 20:31:05,829 - main - INFO - Starting ABDM Integration API server on 0.0.0.0:8002
+2025-06-11 20:31:05,926 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 20:31:05,927 - main - INFO - Starting ABDM Integration API
+2025-06-11 20:31:05,927 - main - INFO - Periodic token refresh task started
+2025-06-11 20:31:05,927 - token_manager - INFO - Starting periodic token refresh task (every 0:15:00)
+2025-06-11 20:31:05,929 - token_manager - INFO - Periodic token check triggered
+2025-06-11 20:31:05,930 - token_manager - INFO - Token expired or expiring soon. Time left: 0 seconds
+2025-06-11 20:31:05,930 - token_manager - INFO - Token needs refresh
+2025-06-11 20:31:05,930 - token_manager - INFO - Attempting to use refresh token
+2025-06-11 20:31:05,930 - token_manager - INFO - Refreshing token for SBXID_009850
+2025-06-11 20:31:06,625 - token_manager - ERROR - Failed to refresh token: 403 - Access Denied
+2025-06-11 20:31:06,626 - token_manager - ERROR - Unexpected error refreshing token: Failed to refresh token: 403 - Access Denied - Details: {'status_code': 403}
+2025-06-11 20:31:06,627 - token_manager - WARNING - Refresh token failed, trying client credentials
+2025-06-11 20:31:06,631 - token_manager - INFO - Getting completely new token
+2025-06-11 20:31:06,642 - token_manager - INFO - Fetching new token for SBXID_009850
+2025-06-11 20:31:07,090 - token_manager - ERROR - Failed to fetch token: 403 - Access Denied
+2025-06-11 20:31:07,091 - token_manager - ERROR - Unexpected error fetching token: Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403}
+2025-06-11 20:31:07,093 - token_manager - ERROR - Unexpected error in get_valid_token: Unexpected error fetching token: Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403} - Details: {'exception': "Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403}"}
+2025-06-11 20:31:07,094 - token_manager - ERROR - Error during periodic token check: Unexpected error in get_valid_token: Unexpected error fetching token: Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403} - Details: {'exception': "Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403}"} - Details: {'exception': 'Unexpected error fetching token: Failed to fetch token: 403 - Access Denied - Details: {\'status_code\': 403} - Details: {\'exception\': "Failed to fetch token: 403 - Access Denied - Details: {\'status_code\': 403}"}'}
+2025-06-11 20:31:08,602 - middlewares - INFO - Request started: GET /docs
+2025-06-11 20:31:08,603 - middlewares - INFO - Request completed: GET /docs - Status: 200 - Time: 0.001s
+2025-06-11 20:31:08,851 - middlewares - INFO - Request started: GET /openapi.json
+2025-06-11 20:31:08,855 - middlewares - INFO - Request completed: GET /openapi.json - Status: 200 - Time: 0.004s
+2025-06-11 20:32:18,419 - middlewares - INFO - Request started: POST /token
+2025-06-11 20:32:18,429 - token_manager - INFO - Creating new token for SBXID_009850
+2025-06-11 20:32:18,431 - token_manager - INFO - Fetching new token for SBXID_009850
+2025-06-11 20:32:19,222 - token_manager - ERROR - Failed to fetch token: 403 - Access Denied
+2025-06-11 20:32:19,223 - token_manager - ERROR - Unexpected error fetching token: Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403}
+2025-06-11 20:32:19,225 - token_routes - ERROR - Failed to create token: Unexpected error fetching token: Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403} - Details: {'exception': "Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403}"}
+2025-06-11 20:32:19,229 - middlewares - INFO - Request completed: POST /token - Status: 500 - Time: 0.809s
+2025-06-11 20:35:54,325 - middlewares - INFO - Request started: POST /token
+2025-06-11 20:35:54,327 - token_manager - INFO - Creating new token for SBXID_009850
+2025-06-11 20:35:54,328 - token_manager - INFO - Fetching new token for SBXID_009850
+2025-06-11 20:35:54,538 - token_manager - ERROR - Failed to fetch token: 403 - Access Denied
+2025-06-11 20:35:54,539 - token_manager - ERROR - Unexpected error fetching token: Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403}
+2025-06-11 20:35:54,539 - token_routes - ERROR - Failed to create token: Unexpected error fetching token: Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403} - Details: {'exception': "Failed to fetch token: 403 - Access Denied - Details: {'status_code': 403}"}
+2025-06-11 20:35:54,540 - middlewares - INFO - Request completed: POST /token - Status: 500 - Time: 0.214s
+2025-06-11 20:50:14,881 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 20:50:14,888 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 20:50:14,902 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 20:50:14,904 - main - INFO - Starting ABDM Integration API server on 0.0.0.0:8002
+2025-06-11 20:50:15,005 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 20:50:15,007 - main - INFO - Starting ABDM Integration API
+2025-06-11 20:50:15,007 - main - INFO - Periodic token refresh task started
+2025-06-11 20:50:15,008 - token_manager - INFO - Starting periodic token refresh task (every 0:15:00)
+2025-06-11 20:50:15,008 - token_manager - INFO - Periodic token check triggered
+2025-06-11 20:50:15,009 - token_manager - INFO - Token expired or expiring soon. Time left: 0 seconds
+2025-06-11 20:50:15,009 - token_manager - INFO - Token needs refresh
+2025-06-11 20:50:15,010 - token_manager - INFO - Attempting to use refresh token
+2025-06-11 20:50:15,010 - token_manager - INFO - Refreshing token for SBXID_009850
+2025-06-11 20:50:15,940 - token_manager - ERROR - Failed to refresh token: 401 - {"error":{"code":2500,"message":"Invalid client secret"}}
+2025-06-11 20:50:15,941 - token_manager - ERROR - Unexpected error refreshing token: Failed to refresh token: 401 - {"error":{"code":2500,"message":"Invalid client secret"}} - Details: {'status_code': 401}
+2025-06-11 20:50:15,942 - token_manager - WARNING - Refresh token failed, trying client credentials
+2025-06-11 20:50:15,945 - token_manager - INFO - Getting completely new token
+2025-06-11 20:50:15,947 - token_manager - INFO - Fetching new token for SBXID_009850
+2025-06-11 20:50:16,719 - token_manager - INFO - New token fetched successfully for SBXID_009850
+2025-06-11 20:50:16,730 - token_manager - INFO - New token fetched and saved
+2025-06-11 20:50:16,731 - token_manager - INFO - Periodic token check completed successfully
+2025-06-11 20:50:23,378 - middlewares - INFO - Request started: GET /docs
+2025-06-11 20:50:23,380 - middlewares - INFO - Request completed: GET /docs - Status: 200 - Time: 0.002s
+2025-06-11 20:50:23,598 - middlewares - INFO - Request started: GET /openapi.json
+2025-06-11 20:50:23,602 - middlewares - INFO - Request completed: GET /openapi.json - Status: 200 - Time: 0.005s
+2025-06-11 20:50:59,880 - middlewares - INFO - Request started: POST /token
+2025-06-11 20:50:59,881 - token_manager - INFO - Creating new token for SBXID_009850
+2025-06-11 20:50:59,882 - token_manager - INFO - Fetching new token for SBXID_009850
+2025-06-11 20:51:00,586 - token_manager - INFO - New token fetched successfully for SBXID_009850
+2025-06-11 20:51:00,592 - token_manager - INFO - Token saved to abdm_token.json
+2025-06-11 20:51:00,595 - middlewares - INFO - Request completed: POST /token - Status: 200 - Time: 0.715s
+2025-06-11 20:51:09,588 - middlewares - INFO - Request started: GET /token
+2025-06-11 20:51:09,608 - token_manager - INFO - Token valid for 1191 seconds
+2025-06-11 20:51:09,610 - middlewares - INFO - Request completed: GET /token - Status: 200 - Time: 0.021s
+2025-06-11 20:51:16,845 - middlewares - INFO - Request started: GET /token/info
+2025-06-11 20:51:16,849 - token_manager - INFO - Token valid for 1184 seconds
+2025-06-11 20:51:16,851 - middlewares - INFO - Request completed: GET /token/info - Status: 200 - Time: 0.006s
+2025-06-11 20:51:24,711 - middlewares - INFO - Request started: GET /headers
+2025-06-11 20:51:24,712 - token_manager - INFO - Token valid for 1176 seconds
+2025-06-11 20:51:24,714 - middlewares - INFO - Request completed: GET /headers - Status: 200 - Time: 0.003s
+2025-06-11 20:51:33,526 - middlewares - INFO - Request started: GET /health
+2025-06-11 20:51:33,529 - token_manager - INFO - Token valid for 1167 seconds
+2025-06-11 20:51:33,531 - middlewares - INFO - Request completed: GET /health - Status: 200 - Time: 0.005s
+2025-06-11 21:05:16,754 - token_manager - INFO - Periodic token check triggered
+2025-06-11 21:05:16,757 - token_manager - INFO - Token valid for 344 seconds
+2025-06-11 21:05:16,758 - token_manager - INFO - Periodic token check completed successfully
+2025-06-11 21:12:04,955 - middlewares - INFO - Request started: GET /docs
+2025-06-11 21:12:04,960 - middlewares - INFO - Request completed: GET /docs - Status: 200 - Time: 0.005s
+2025-06-11 21:12:05,182 - middlewares - INFO - Request started: GET /openapi.json
+2025-06-11 21:12:05,184 - middlewares - INFO - Request completed: GET /openapi.json - Status: 200 - Time: 0.003s
+2025-06-11 21:12:51,181 - middlewares - INFO - Request started: POST /token
+2025-06-11 21:12:51,185 - token_manager - INFO - Creating new token for SBXID_009850
+2025-06-11 21:12:51,186 - token_manager - INFO - Fetching new token for SBXID_009850
+2025-06-11 21:12:51,743 - token_manager - INFO - New token fetched successfully for SBXID_009850
+2025-06-11 21:12:51,749 - token_manager - INFO - Token saved to abdm_token.json
+2025-06-11 21:12:51,754 - middlewares - INFO - Request completed: POST /token - Status: 200 - Time: 0.573s
+2025-06-11 21:13:08,378 - middlewares - INFO - Request started: GET /docs
+2025-06-11 21:13:08,387 - middlewares - INFO - Request completed: GET /docs - Status: 200 - Time: 0.008s
+2025-06-11 21:13:08,571 - middlewares - INFO - Request started: GET /openapi.json
+2025-06-11 21:13:08,573 - middlewares - INFO - Request completed: GET /openapi.json - Status: 200 - Time: 0.002s
+2025-06-11 21:13:20,842 - middlewares - INFO - Request started: POST /token
+2025-06-11 21:13:20,843 - token_manager - INFO - Creating new token for SBXID_009850
+2025-06-11 21:13:20,844 - token_manager - INFO - Fetching new token for SBXID_009850
+2025-06-11 21:13:21,436 - token_manager - INFO - New token fetched successfully for SBXID_009850
+2025-06-11 21:13:21,439 - token_manager - INFO - Token saved to abdm_token.json
+2025-06-11 21:13:21,441 - middlewares - INFO - Request completed: POST /token - Status: 200 - Time: 0.599s
+2025-06-11 21:14:02,591 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 21:14:02,596 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 21:14:38,130 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 21:14:38,132 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 21:20:15,071 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 21:20:15,074 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 21:20:15,167 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 21:20:15,168 - main - INFO - Starting ABDM Integration API server on 0.0.0.0:8002
+2025-06-11 21:20:15,246 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 21:20:15,248 - main - INFO - Starting ABDM Integration API
+2025-06-11 21:20:15,248 - main - INFO - Periodic token refresh task started
+2025-06-11 21:20:15,248 - public_key_service - INFO - Fetching ABDM public key...
+2025-06-11 21:20:15,249 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 21:20:15,274 - token_manager - INFO - Token valid for 786 seconds
+2025-06-11 21:20:16,967 - public_key_service - INFO - Public key fetched and saved successfully
+2025-06-11 21:20:16,970 - public_key_service - INFO - Public key refresh scheduler started
+2025-06-11 21:20:16,970 - main - INFO - Public key manager initialized
+2025-06-11 21:20:16,970 - token_manager - INFO - Starting periodic token refresh task (every 0:15:00)
+2025-06-11 21:20:16,971 - token_manager - INFO - Periodic token check triggered
+2025-06-11 21:20:16,971 - token_manager - INFO - Token valid for 785 seconds
+2025-06-11 21:20:16,972 - token_manager - INFO - Periodic token check completed successfully
+2025-06-11 21:20:20,528 - middlewares - INFO - Request started: GET /docs
+2025-06-11 21:20:20,533 - middlewares - INFO - Request completed: GET /docs - Status: 200 - Time: 0.005s
+2025-06-11 21:20:20,736 - middlewares - INFO - Request started: GET /openapi.json
+2025-06-11 21:20:20,753 - middlewares - INFO - Request completed: GET /openapi.json - Status: 200 - Time: 0.017s
+2025-06-11 21:21:15,646 - middlewares - INFO - Request started: POST /token
+2025-06-11 21:21:15,647 - token_manager - INFO - Creating new token for SBXID_009850
+2025-06-11 21:21:15,647 - token_manager - INFO - Fetching new token for SBXID_009850
+2025-06-11 21:21:16,222 - token_manager - INFO - New token fetched successfully for SBXID_009850
+2025-06-11 21:21:16,229 - token_manager - INFO - Token saved to abdm_token.json
+2025-06-11 21:21:16,234 - middlewares - INFO - Request completed: POST /token - Status: 200 - Time: 0.588s
+2025-06-11 21:21:31,404 - middlewares - INFO - Request started: GET /token
+2025-06-11 21:21:31,445 - token_manager - INFO - Token valid for 1185 seconds
+2025-06-11 21:21:31,446 - middlewares - INFO - Request completed: GET /token - Status: 200 - Time: 0.043s
+2025-06-11 21:21:38,620 - middlewares - INFO - Request started: GET /token/info
+2025-06-11 21:21:38,621 - token_manager - INFO - Token valid for 1178 seconds
+2025-06-11 21:21:38,625 - middlewares - INFO - Request completed: GET /token/info - Status: 200 - Time: 0.005s
+2025-06-11 21:21:41,315 - middlewares - INFO - Request started: GET /token/info
+2025-06-11 21:21:41,316 - token_manager - INFO - Token valid for 1175 seconds
+2025-06-11 21:21:41,316 - middlewares - INFO - Request completed: GET /token/info - Status: 200 - Time: 0.001s
+2025-06-11 21:21:48,601 - middlewares - INFO - Request started: GET /headers
+2025-06-11 21:21:48,604 - token_manager - INFO - Token valid for 1168 seconds
+2025-06-11 21:21:48,607 - middlewares - INFO - Request completed: GET /headers - Status: 200 - Time: 0.006s
+2025-06-11 21:21:50,503 - middlewares - INFO - Request started: GET /headers
+2025-06-11 21:21:50,504 - token_manager - INFO - Token valid for 1166 seconds
+2025-06-11 21:21:50,505 - middlewares - INFO - Request completed: GET /headers - Status: 200 - Time: 0.002s
+2025-06-11 21:21:59,576 - middlewares - INFO - Request started: GET /health
+2025-06-11 21:21:59,578 - token_manager - INFO - Token valid for 1157 seconds
+2025-06-11 21:21:59,578 - middlewares - INFO - Request completed: GET /health - Status: 200 - Time: 0.002s
+2025-06-11 21:22:01,099 - middlewares - INFO - Request started: GET /health
+2025-06-11 21:22:01,100 - token_manager - INFO - Token valid for 1155 seconds
+2025-06-11 21:22:01,100 - middlewares - INFO - Request completed: GET /health - Status: 200 - Time: 0.001s
+2025-06-11 21:22:24,386 - middlewares - INFO - Request started: GET /encryption/public-key
+2025-06-11 21:22:24,388 - encryption_routes - INFO - User requesting public key
+2025-06-11 21:22:24,430 - middlewares - INFO - Request completed: GET /encryption/public-key - Status: 200 - Time: 0.045s
+2025-06-11 21:23:42,391 - middlewares - INFO - Request started: POST /encryption/encrypt
+2025-06-11 21:23:42,400 - encryption_routes - INFO - Encrypting data
+2025-06-11 21:23:42,402 - encryption_routes - INFO - Description: Test Aadhaar number
+2025-06-11 21:23:42,486 - encryption_routes - INFO - Data encrypted successfully
+2025-06-11 21:23:42,489 - middlewares - INFO - Request completed: POST /encryption/encrypt - Status: 200 - Time: 0.097s
+2025-06-11 21:24:22,617 - middlewares - INFO - Request started: POST /encryption/secure-encrypt
+2025-06-11 21:24:22,624 - encryption_routes - INFO - Using secure-encrypt endpoint
+2025-06-11 21:24:22,628 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 21:24:22,631 - token_manager - INFO - Token valid for 1014 seconds
+2025-06-11 21:24:22,632 - middlewares - INFO - Request completed: POST /encryption/secure-encrypt - Status: 200 - Time: 0.014s
+2025-06-11 21:25:39,396 - middlewares - INFO - Request started: GET /docs
+2025-06-11 21:25:39,398 - middlewares - INFO - Request completed: GET /docs - Status: 200 - Time: 0.002s
+2025-06-11 21:25:39,602 - middlewares - INFO - Request started: GET /openapi.json
+2025-06-11 21:25:39,604 - middlewares - INFO - Request completed: GET /openapi.json - Status: 200 - Time: 0.002s
+2025-06-11 21:35:16,973 - token_manager - INFO - Periodic token check triggered
+2025-06-11 21:35:16,976 - token_manager - INFO - Token valid for 360 seconds
+2025-06-11 21:35:16,977 - token_manager - INFO - Periodic token check completed successfully
+2025-06-11 21:50:16,983 - token_manager - INFO - Periodic token check triggered
+2025-06-11 21:50:16,985 - token_manager - INFO - Token expired or expiring soon. Time left: 0 seconds
+2025-06-11 21:50:16,985 - token_manager - INFO - Token needs refresh
+2025-06-11 21:50:16,986 - token_manager - INFO - Attempting to use refresh token
+2025-06-11 21:50:16,986 - token_manager - INFO - Refreshing token for SBXID_009850
+2025-06-11 21:50:16,992 - token_manager - ERROR - Network error while refreshing token: HTTPSConnectionPool(host='dev.abdm.gov.in', port=443): Max retries exceeded with url: /gateway/v0.5/sessions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002BB62DA0710>: Failed to resolve 'dev.abdm.gov.in' ([Errno 11001] getaddrinfo failed)"))
+2025-06-11 21:50:16,993 - token_manager - WARNING - Refresh token failed, trying client credentials
+2025-06-11 21:50:16,993 - token_manager - INFO - Getting completely new token
+2025-06-11 21:50:16,994 - token_manager - INFO - Fetching new token for SBXID_009850
+2025-06-11 21:50:16,998 - token_manager - ERROR - Network error while fetching token: HTTPSConnectionPool(host='dev.abdm.gov.in', port=443): Max retries exceeded with url: /gateway/v0.5/sessions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002BB62DA19A0>: Failed to resolve 'dev.abdm.gov.in' ([Errno 11001] getaddrinfo failed)"))
+2025-06-11 21:50:16,999 - token_manager - ERROR - Unexpected error in get_valid_token: Network error while fetching token: HTTPSConnectionPool(host='dev.abdm.gov.in', port=443): Max retries exceeded with url: /gateway/v0.5/sessions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002BB62DA19A0>: Failed to resolve 'dev.abdm.gov.in' ([Errno 11001] getaddrinfo failed)")) - Details: {'exception': 'HTTPSConnectionPool(host=\'dev.abdm.gov.in\', port=443): Max retries exceeded with url: /gateway/v0.5/sessions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002BB62DA19A0>: Failed to resolve \'dev.abdm.gov.in\' ([Errno 11001] getaddrinfo failed)"))'}
+2025-06-11 21:50:16,999 - token_manager - ERROR - Error during periodic token check: Unexpected error in get_valid_token: Network error while fetching token: HTTPSConnectionPool(host='dev.abdm.gov.in', port=443): Max retries exceeded with url: /gateway/v0.5/sessions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002BB62DA19A0>: Failed to resolve 'dev.abdm.gov.in' ([Errno 11001] getaddrinfo failed)")) - Details: {'exception': 'HTTPSConnectionPool(host=\'dev.abdm.gov.in\', port=443): Max retries exceeded with url: /gateway/v0.5/sessions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002BB62DA19A0>: Failed to resolve \'dev.abdm.gov.in\' ([Errno 11001] getaddrinfo failed)"))'} - Details: {'exception': 'Network error while fetching token: HTTPSConnectionPool(host=\'dev.abdm.gov.in\', port=443): Max retries exceeded with url: /gateway/v0.5/sessions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002BB62DA19A0>: Failed to resolve \'dev.abdm.gov.in\' ([Errno 11001] getaddrinfo failed)")) - Details: {\'exception\': \'HTTPSConnectionPool(host=\\\'dev.abdm.gov.in\\\', port=443): Max retries exceeded with url: /gateway/v0.5/sessions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002BB62DA19A0>: Failed to resolve \\\'dev.abdm.gov.in\\\' ([Errno 11001] getaddrinfo failed)"))\'}'}
+2025-06-11 22:05:16,984 - token_manager - INFO - Periodic token check triggered
+2025-06-11 22:05:16,986 - token_manager - INFO - Token expired or expiring soon. Time left: 0 seconds
+2025-06-11 22:05:16,986 - token_manager - INFO - Token needs refresh
+2025-06-11 22:05:16,986 - token_manager - INFO - Attempting to use refresh token
+2025-06-11 22:05:16,986 - token_manager - INFO - Refreshing token for SBXID_009850
+2025-06-11 22:05:16,989 - token_manager - ERROR - Network error while refreshing token: HTTPSConnectionPool(host='dev.abdm.gov.in', port=443): Max retries exceeded with url: /gateway/v0.5/sessions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002BB62DA22D0>: Failed to resolve 'dev.abdm.gov.in' ([Errno 11001] getaddrinfo failed)"))
+2025-06-11 22:05:16,989 - token_manager - WARNING - Refresh token failed, trying client credentials
+2025-06-11 22:05:16,989 - token_manager - INFO - Getting completely new token
+2025-06-11 22:05:16,989 - token_manager - INFO - Fetching new token for SBXID_009850
+2025-06-11 22:05:16,992 - token_manager - ERROR - Network error while fetching token: HTTPSConnectionPool(host='dev.abdm.gov.in', port=443): Max retries exceeded with url: /gateway/v0.5/sessions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002BB62DA2A20>: Failed to resolve 'dev.abdm.gov.in' ([Errno 11001] getaddrinfo failed)"))
+2025-06-11 22:05:16,992 - token_manager - ERROR - Unexpected error in get_valid_token: Network error while fetching token: HTTPSConnectionPool(host='dev.abdm.gov.in', port=443): Max retries exceeded with url: /gateway/v0.5/sessions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002BB62DA2A20>: Failed to resolve 'dev.abdm.gov.in' ([Errno 11001] getaddrinfo failed)")) - Details: {'exception': 'HTTPSConnectionPool(host=\'dev.abdm.gov.in\', port=443): Max retries exceeded with url: /gateway/v0.5/sessions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002BB62DA2A20>: Failed to resolve \'dev.abdm.gov.in\' ([Errno 11001] getaddrinfo failed)"))'}
+2025-06-11 22:05:16,993 - token_manager - ERROR - Error during periodic token check: Unexpected error in get_valid_token: Network error while fetching token: HTTPSConnectionPool(host='dev.abdm.gov.in', port=443): Max retries exceeded with url: /gateway/v0.5/sessions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002BB62DA2A20>: Failed to resolve 'dev.abdm.gov.in' ([Errno 11001] getaddrinfo failed)")) - Details: {'exception': 'HTTPSConnectionPool(host=\'dev.abdm.gov.in\', port=443): Max retries exceeded with url: /gateway/v0.5/sessions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002BB62DA2A20>: Failed to resolve \'dev.abdm.gov.in\' ([Errno 11001] getaddrinfo failed)"))'} - Details: {'exception': 'Network error while fetching token: HTTPSConnectionPool(host=\'dev.abdm.gov.in\', port=443): Max retries exceeded with url: /gateway/v0.5/sessions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002BB62DA2A20>: Failed to resolve \'dev.abdm.gov.in\' ([Errno 11001] getaddrinfo failed)")) - Details: {\'exception\': \'HTTPSConnectionPool(host=\\\'dev.abdm.gov.in\\\', port=443): Max retries exceeded with url: /gateway/v0.5/sessions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002BB62DA2A20>: Failed to resolve \\\'dev.abdm.gov.in\\\' ([Errno 11001] getaddrinfo failed)"))\'}'}
+2025-06-11 22:17:06,988 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 22:17:06,992 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 22:17:07,651 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 22:17:07,652 - main - INFO - Starting ABDM Integration API server on 0.0.0.0:8002
+2025-06-11 22:17:07,750 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 22:17:07,752 - main - INFO - Starting ABDM Integration API
+2025-06-11 22:17:07,752 - main - INFO - Periodic token refresh task started
+2025-06-11 22:17:07,763 - public_key_service - INFO - Public key refresh scheduler started
+2025-06-11 22:17:07,764 - main - INFO - Public key manager initialized
+2025-06-11 22:17:07,764 - token_manager - INFO - Starting periodic token refresh task (every 0:15:00)
+2025-06-11 22:17:07,764 - token_manager - INFO - Periodic token check triggered
+2025-06-11 22:17:07,781 - token_manager - INFO - Token expired or expiring soon. Time left: 0 seconds
+2025-06-11 22:17:07,781 - token_manager - INFO - Token needs refresh
+2025-06-11 22:17:07,781 - token_manager - INFO - Attempting to use refresh token
+2025-06-11 22:17:07,782 - token_manager - INFO - Refreshing token for SBXID_009850
