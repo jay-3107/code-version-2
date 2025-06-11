@@ -24,6 +24,12 @@ class Settings:
             "https://abhasbx.abdm.gov.in/abha/api/v3/profile/public/certificate"
         )
         
+        # Aadhaar OTP API endpoint
+        self.ABDM_INITIATE_OTP_API = os.environ.get(
+            "ABDM_INITIATE_OTP_API",
+            "https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/request/otp"
+        )
+        
         # Server settings
         self.HOST = "0.0.0.0"
         self.PORT = 8002
@@ -31,7 +37,7 @@ class Settings:
         
         # API Documentation
         self.API_TITLE = "ABDM Integration API"
-        self.API_DESCRIPTION = "Services for ABDM integration including token management and data encryption"
+        self.API_DESCRIPTION = "Services for ABDM integration including token management, data encryption, and verification"
         self.API_VERSION = "1.0.0"
 
 # Create a global settings object

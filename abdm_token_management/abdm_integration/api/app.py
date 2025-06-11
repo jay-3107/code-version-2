@@ -5,7 +5,7 @@ from fastapi.responses import JSONResponse
 from fastapi.exceptions import RequestValidationError
 
 # Import routes directly
-from .routes import token_routes, health_routes, encryption_routes
+from .routes import token_routes, health_routes, encryption_routes, verification_routes
 from .middlewares import setup_middlewares
 from config.settings import settings
 from config.logging_config import setup_logger
@@ -78,9 +78,10 @@ def create_app() -> FastAPI:
             content={"detail": str(exc), "error_type": "validation_error"}
         )
     
-    # Include routers directly - remove .router attribute
+    # Include routers directly 
     app.include_router(token_routes)
     app.include_router(health_routes)
     app.include_router(encryption_routes)
+    app.include_router(verification_routes)  # Add verification routes
     
     return app
