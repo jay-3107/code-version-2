@@ -1,0 +1,11 @@
+2025-06-11 17:25:38,754 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 17:25:38,778 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 17:25:38,815 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 17:25:38,816 - main - INFO - Starting ABDM Integration API server on 0.0.0.0:8002
+2025-06-11 17:25:38,938 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 17:25:38,940 - main - INFO - Starting ABDM Integration API
+2025-06-11 17:25:38,942 - main - INFO - Periodic token refresh task started
+2025-06-11 17:25:38,942 - token_manager - INFO - Starting periodic token refresh task (every 0:15:00)
+2025-06-11 17:25:38,943 - token_manager - INFO - Periodic token check triggered
+2025-06-11 17:25:38,943 - token_manager - ERROR - Unexpected error in get_valid_token: 'token_data'
+2025-06-11 17:25:38,944 - token_manager - ERROR - Error during periodic token check: Unexpected error in get_valid_token: 'token_data' - Details: {'exception': "'token_data'"}
