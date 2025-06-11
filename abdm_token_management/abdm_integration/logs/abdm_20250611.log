@@ -36,3 +36,61 @@
 2025-06-11 17:28:19,803 - token_manager - INFO - New token fetched successfully for SBXID_009850
 2025-06-11 17:28:19,809 - token_manager - INFO - Token saved to abdm_token.json
 2025-06-11 17:28:19,812 - middlewares - INFO - Request completed: POST /token - Status: 200 - Time: 6.396s
+2025-06-11 18:18:35,902 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 18:18:35,907 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 18:18:35,918 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 18:18:35,919 - main - INFO - Starting ABDM Integration API server on 0.0.0.0:8002
+2025-06-11 18:18:36,027 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-11 18:18:36,029 - main - INFO - Starting ABDM Integration API
+2025-06-11 18:18:36,030 - main - INFO - Periodic token refresh task started
+2025-06-11 18:18:36,030 - token_manager - INFO - Starting periodic token refresh task (every 0:15:00)
+2025-06-11 18:18:36,030 - token_manager - INFO - Periodic token check triggered
+2025-06-11 18:18:36,031 - token_manager - INFO - Token expired or expiring soon. Time left: 0 seconds
+2025-06-11 18:18:36,031 - token_manager - INFO - Token needs refresh
+2025-06-11 18:18:36,032 - token_manager - INFO - Attempting to use refresh token
+2025-06-11 18:18:36,032 - token_manager - INFO - Refreshing token for SBXID_009850
+2025-06-11 18:18:36,462 - token_manager - ERROR - Failed to refresh token: 401 - {"error":{"code":2500,"message":"Invalid client secret"}}
+2025-06-11 18:18:36,463 - token_manager - ERROR - Unexpected error refreshing token: Failed to refresh token: 401 - {"error":{"code":2500,"message":"Invalid client secret"}} - Details: {'status_code': 401}
+2025-06-11 18:18:36,464 - token_manager - WARNING - Refresh token failed, trying client credentials
+2025-06-11 18:18:36,466 - token_manager - INFO - Getting completely new token
+2025-06-11 18:18:36,468 - token_manager - INFO - Fetching new token for SBXID_009850
+2025-06-11 18:18:38,298 - token_manager - INFO - New token fetched successfully for SBXID_009850
+2025-06-11 18:18:38,300 - token_manager - INFO - New token fetched and saved
+2025-06-11 18:18:38,301 - token_manager - INFO - Periodic token check completed successfully
+2025-06-11 18:18:51,262 - middlewares - INFO - Request started: POST /token
+2025-06-11 18:18:51,265 - token_manager - INFO - Creating new token for SBXID_009850
+2025-06-11 18:18:51,265 - token_manager - INFO - Fetching new token for SBXID_009850
+2025-06-11 18:18:53,044 - token_manager - INFO - New token fetched successfully for SBXID_009850
+2025-06-11 18:18:53,049 - token_manager - INFO - Token saved to abdm_token.json
+2025-06-11 18:18:53,060 - middlewares - INFO - Request completed: POST /token - Status: 200 - Time: 1.792s
+2025-06-11 18:25:32,589 - middlewares - INFO - Request started: POST /token
+2025-06-11 18:25:32,590 - token_manager - INFO - Creating new token for SBXID_009850
+2025-06-11 18:25:32,591 - token_manager - INFO - Fetching new token for SBXID_009850
+2025-06-11 18:25:40,665 - token_manager - INFO - New token fetched successfully for SBXID_009850
+2025-06-11 18:25:40,671 - token_manager - INFO - Token saved to abdm_token.json
+2025-06-11 18:25:40,676 - middlewares - INFO - Request completed: POST /token - Status: 200 - Time: 8.087s
+2025-06-11 18:25:56,217 - middlewares - INFO - Request started: POST /token
+2025-06-11 18:25:56,222 - token_manager - INFO - Creating new token for SBXID_009850
+2025-06-11 18:25:56,223 - token_manager - INFO - Fetching new token for SBXID_009850
+2025-06-11 18:25:58,762 - token_manager - INFO - New token fetched successfully for SBXID_009850
+2025-06-11 18:25:58,769 - token_manager - INFO - Token saved to abdm_token.json
+2025-06-11 18:25:58,773 - middlewares - INFO - Request completed: POST /token - Status: 200 - Time: 2.556s
+2025-06-11 18:33:38,318 - token_manager - INFO - Periodic token check triggered
+2025-06-11 18:33:38,321 - token_manager - INFO - Token valid for 740 seconds
+2025-06-11 18:33:38,324 - token_manager - INFO - Periodic token check completed successfully
+2025-06-11 18:48:38,345 - token_manager - INFO - Periodic token check triggered
+2025-06-11 18:48:38,351 - token_manager - INFO - Token expired or expiring soon. Time left: 0 seconds
+2025-06-11 18:48:38,352 - token_manager - INFO - Token needs refresh
+2025-06-11 18:48:38,352 - token_manager - INFO - Attempting to use refresh token
+2025-06-11 18:48:38,353 - token_manager - INFO - Refreshing token for SBXID_009850
+2025-06-11 18:48:38,650 - token_manager - ERROR - Failed to refresh token: 401 - {"error":{"code":2500,"message":"Invalid client secret"}}
+2025-06-11 18:48:38,653 - token_manager - ERROR - Unexpected error refreshing token: Failed to refresh token: 401 - {"error":{"code":2500,"message":"Invalid client secret"}} - Details: {'status_code': 401}
+2025-06-11 18:48:38,654 - token_manager - WARNING - Refresh token failed, trying client credentials
+2025-06-11 18:48:38,655 - token_manager - INFO - Getting completely new token
+2025-06-11 18:48:38,656 - token_manager - INFO - Fetching new token for SBXID_009850
+2025-06-11 18:48:39,287 - token_manager - INFO - New token fetched successfully for SBXID_009850
+2025-06-11 18:48:39,291 - token_manager - INFO - New token fetched and saved
+2025-06-11 18:48:39,292 - token_manager - INFO - Periodic token check completed successfully
+2025-06-11 19:03:39,322 - token_manager - INFO - Periodic token check triggered
+2025-06-11 19:03:39,365 - token_manager - INFO - Token valid for 300 seconds
+2025-06-11 19:03:39,367 - token_manager - INFO - Periodic token check completed successfully

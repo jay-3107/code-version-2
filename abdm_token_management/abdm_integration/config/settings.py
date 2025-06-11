@@ -13,7 +13,7 @@ class Settings:
         self.TOKEN_REFRESH_INTERVAL = timedelta(minutes=15)  # Proactively check every 15 minutes
         
         # API endpoints
-        self.ABDM_SESSION_API = "https://dev.abdm.gov.in/gateway/v0.5/sessions"
+        self.ABDM_SESSION_API = "https://dev.abdm.gov.in/api/hiecm/gateway/v3/sessions"
         
         # Server settings
         self.HOST = "0.0.0.0"
