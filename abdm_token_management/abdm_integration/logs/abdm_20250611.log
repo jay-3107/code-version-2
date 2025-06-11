@@ -9,3 +9,30 @@
 2025-06-11 17:25:38,943 - token_manager - INFO - Periodic token check triggered
 2025-06-11 17:25:38,943 - token_manager - ERROR - Unexpected error in get_valid_token: 'token_data'
 2025-06-11 17:25:38,944 - token_manager - ERROR - Error during periodic token check: Unexpected error in get_valid_token: 'token_data' - Details: {'exception': "'token_data'"}
+2025-06-11 17:26:01,270 - middlewares - INFO - Request started: GET /docs
+2025-06-11 17:26:01,276 - middlewares - INFO - Request completed: GET /docs - Status: 200 - Time: 0.005s
+2025-06-11 17:26:01,555 - middlewares - INFO - Request started: GET /openapi.json
+2025-06-11 17:26:01,561 - middlewares - INFO - Request completed: GET /openapi.json - Status: 200 - Time: 0.005s
+2025-06-11 17:26:14,597 - middlewares - INFO - Request started: GET /health
+2025-06-11 17:26:14,603 - middlewares - INFO - Request completed: GET /health - Status: 200 - Time: 0.006s
+2025-06-11 17:26:56,542 - middlewares - INFO - Request started: POST /token
+2025-06-11 17:26:56,545 - token_manager - INFO - Creating new token for SBXID_009850
+2025-06-11 17:26:56,546 - token_manager - INFO - Fetching new token for SBXID_009850
+2025-06-11 17:27:01,255 - token_manager - INFO - New token fetched successfully for SBXID_009850
+2025-06-11 17:27:01,261 - token_manager - INFO - Token saved to abdm_token.json
+2025-06-11 17:27:01,267 - middlewares - INFO - Request completed: POST /token - Status: 200 - Time: 4.725s
+2025-06-11 17:27:12,427 - middlewares - INFO - Request started: GET /token
+2025-06-11 17:27:12,488 - token_manager - INFO - Token valid for 1189 seconds
+2025-06-11 17:27:12,491 - middlewares - INFO - Request completed: GET /token - Status: 200 - Time: 0.064s
+2025-06-11 17:27:24,838 - middlewares - INFO - Request started: GET /token/info
+2025-06-11 17:27:24,842 - token_manager - INFO - Token valid for 1177 seconds
+2025-06-11 17:27:24,845 - middlewares - INFO - Request completed: GET /token/info - Status: 200 - Time: 0.006s
+2025-06-11 17:27:33,773 - middlewares - INFO - Request started: GET /headers
+2025-06-11 17:27:33,778 - token_manager - INFO - Token valid for 1168 seconds
+2025-06-11 17:27:33,781 - middlewares - INFO - Request completed: GET /headers - Status: 200 - Time: 0.007s
+2025-06-11 17:28:13,417 - middlewares - INFO - Request started: POST /token
+2025-06-11 17:28:13,420 - token_manager - INFO - Creating new token for SBXID_009850
+2025-06-11 17:28:13,421 - token_manager - INFO - Fetching new token for SBXID_009850
+2025-06-11 17:28:19,803 - token_manager - INFO - New token fetched successfully for SBXID_009850
+2025-06-11 17:28:19,809 - token_manager - INFO - Token saved to abdm_token.json
+2025-06-11 17:28:19,812 - middlewares - INFO - Request completed: POST /token - Status: 200 - Time: 6.396s
