@@ -704,3 +704,16 @@
 2025-06-12 00:23:54,162 - token_manager - INFO - Periodic token check triggered
 2025-06-12 00:23:54,172 - token_manager - INFO - Token valid for 300 seconds
 2025-06-12 00:23:54,173 - token_manager - INFO - Periodic token check completed successfully
+2025-06-12 00:38:54,178 - token_manager - INFO - Periodic token check triggered
+2025-06-12 00:38:54,195 - token_manager - INFO - Token expired or expiring soon. Time left: 0 seconds
+2025-06-12 00:38:54,197 - token_manager - INFO - Token needs refresh
+2025-06-12 00:38:54,197 - token_manager - INFO - Attempting to use refresh token
+2025-06-12 00:38:54,201 - token_manager - INFO - Refreshing token for SBXID_009850
+2025-06-12 00:38:55,051 - token_manager - ERROR - Failed to refresh token: 401 - {"error":{"code":2500,"message":"Invalid client secret"}}
+2025-06-12 00:38:55,053 - token_manager - ERROR - Unexpected error refreshing token: Failed to refresh token: 401 - {"error":{"code":2500,"message":"Invalid client secret"}} - Details: {'status_code': 401}
+2025-06-12 00:38:55,054 - token_manager - WARNING - Refresh token failed, trying client credentials
+2025-06-12 00:38:55,056 - token_manager - INFO - Getting completely new token
+2025-06-12 00:38:55,058 - token_manager - INFO - Fetching new token for SBXID_009850
+2025-06-12 00:38:55,866 - token_manager - INFO - New token fetched successfully for SBXID_009850
+2025-06-12 00:38:55,872 - token_manager - INFO - New token fetched and saved
+2025-06-12 00:38:55,872 - token_manager - INFO - Periodic token check completed successfully

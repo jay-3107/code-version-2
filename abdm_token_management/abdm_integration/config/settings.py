@@ -10,6 +10,7 @@ class Settings:
         # Token renewal settings
         self.TOKEN_REFRESH_BUFFER_SECONDS = 120  # Refresh 2 minutes before expiry
         self.TOKEN_REFRESH_INTERVAL = timedelta(minutes=15)  # Proactively check every 15 minutes
+        self.ABHA_PROFILE_FILE_PATH = os.environ.get("ABHA_PROFILE_FILE", "abha_profile.json")
         
         # API endpoints
         # Use environment variable if provided, otherwise use the default URL
@@ -28,6 +29,12 @@ class Settings:
         self.ABDM_INITIATE_OTP_API = os.environ.get(
             "ABDM_INITIATE_OTP_API",
             "https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/request/otp"
+        )
+        
+        # Aadhaar enrollment API endpoint
+        self.ABDM_ENROLL_API = os.environ.get(
+            "ABDM_ENROLL_API",
+            "https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/enrol/byAadhaar"
         )
         
         # Server settings
