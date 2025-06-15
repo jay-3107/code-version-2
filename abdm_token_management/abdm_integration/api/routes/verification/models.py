@@ -39,3 +39,12 @@ class ABHAProfileDetails(BaseModel):
     ABHANumber: Optional[str] = None
     phrAddress: Optional[List[str]] = None
     abhaStatus: Optional[str] = None
+    
+class MobileOtpRequest(BaseModel):
+    txnId: str = Field(..., description="Transaction ID to link this OTP request")
+    mobile: str = Field(..., description="Mobile number for OTP (unencrypted)")
+
+class MobileOtpResponse(BaseModel):
+    txnId: str
+    message: str
+    status: str = "success"
