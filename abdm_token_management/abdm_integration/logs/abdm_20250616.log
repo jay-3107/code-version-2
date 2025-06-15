@@ -1,0 +1,653 @@
+2025-06-16 00:06:04,680 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 00:06:04,684 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 00:06:04,874 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 00:06:04,940 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 00:06:04,940 - main - INFO - Starting ABDM Integration API server on 0.0.0.0:8002
+2025-06-16 00:06:05,014 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 00:06:05,016 - main - INFO - Starting ABDM Integration API
+2025-06-16 00:06:05,016 - main - INFO - Periodic token refresh task started
+2025-06-16 00:06:05,018 - public_key_service - INFO - Public key refresh scheduler started
+2025-06-16 00:06:05,019 - main - INFO - Public key manager initialized
+2025-06-16 00:06:05,019 - token_manager - INFO - Starting periodic token refresh task (every 0:15:00)
+2025-06-16 00:06:05,020 - token_manager - INFO - Periodic token check triggered
+2025-06-16 00:06:05,021 - token_manager - INFO - Token valid for 1126 seconds
+2025-06-16 00:06:05,021 - token_manager - INFO - Periodic token check completed successfully
+2025-06-16 00:06:08,179 - middlewares - INFO - Request started: GET /docs
+2025-06-16 00:06:08,182 - middlewares - INFO - Request completed: GET /docs - Status: 200 - Time: 0.004s
+2025-06-16 00:06:08,393 - middlewares - INFO - Request started: GET /openapi.json
+2025-06-16 00:06:08,423 - middlewares - INFO - Request completed: GET /openapi.json - Status: 200 - Time: 0.030s
+2025-06-16 00:06:40,666 - middlewares - INFO - Request started: POST /verification/initiate-aadhaar-otp
+2025-06-16 00:06:40,676 - aadhaar_routes - INFO - Initiating Aadhaar OTP verification
+2025-06-16 00:06:40,727 - token_manager - INFO - Token valid for 1091 seconds
+2025-06-16 00:06:40,729 - verification_utils - INFO - Sending Aadhaar OTP initiation request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/request/otp
+2025-06-16 00:06:43,487 - aadhaar_routes - INFO - OTP initiation successful, txnId: af64310e-295b-4144-86fa-57f853b93eff
+2025-06-16 00:06:43,491 - middlewares - INFO - Request completed: POST /verification/initiate-aadhaar-otp - Status: 200 - Time: 2.825s
+2025-06-16 00:07:17,583 - middlewares - INFO - Request started: POST /verification/enroll-by-aadhaar
+2025-06-16 00:07:17,586 - aadhaar_routes - INFO - Processing ABHA enrollment request with txnId: af64310e-295b-4144-86fa-57f853b93eff
+2025-06-16 00:07:17,587 - token_manager - INFO - Token valid for 1054 seconds
+2025-06-16 00:07:17,587 - verification_utils - INFO - Sending ABHA enrollment request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/enrol/byAadhaar
+2025-06-16 00:07:19,326 - aadhaar_routes - INFO - ABHA enrollment successful
+2025-06-16 00:07:19,332 - abha_profile_service - INFO - ABHA profile saved successfully for 91-6464-3246-8064
+2025-06-16 00:07:19,334 - aadhaar_routes - INFO - ABHA profile saved for 91-6464-3246-8064
+2025-06-16 00:07:19,338 - middlewares - INFO - Request completed: POST /verification/enroll-by-aadhaar - Status: 200 - Time: 1.755s
+2025-06-16 00:07:57,169 - middlewares - INFO - Request started: POST /verification/request-email-verification-link
+2025-06-16 00:07:57,172 - email_routes - INFO - Requesting email verification link
+2025-06-16 00:07:57,174 - email_routes - ERROR - Unexpected error in request_email_verification_link: call_abdm_api() got an unexpected keyword argument 'extra_headers'
+2025-06-16 00:07:57,175 - middlewares - INFO - Request completed: POST /verification/request-email-verification-link - Status: 500 - Time: 0.005s
+2025-06-16 00:10:48,234 - middlewares - INFO - Request started: POST /verification/request-email-verification-link
+2025-06-16 00:10:48,239 - email_routes - INFO - Requesting email verification link
+2025-06-16 00:10:48,241 - email_routes - ERROR - Unexpected error in request_email_verification_link: call_abdm_api() got an unexpected keyword argument 'extra_headers'
+2025-06-16 00:10:48,242 - middlewares - INFO - Request completed: POST /verification/request-email-verification-link - Status: 500 - Time: 0.008s
+2025-06-16 00:10:57,962 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 00:10:57,965 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 00:10:58,079 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 00:10:58,110 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 00:10:58,111 - main - INFO - Starting ABDM Integration API server on 0.0.0.0:8002
+2025-06-16 00:10:58,184 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 00:10:58,186 - main - INFO - Starting ABDM Integration API
+2025-06-16 00:10:58,187 - main - INFO - Periodic token refresh task started
+2025-06-16 00:10:58,188 - public_key_service - INFO - Public key refresh scheduler started
+2025-06-16 00:10:58,189 - main - INFO - Public key manager initialized
+2025-06-16 00:10:58,189 - token_manager - INFO - Starting periodic token refresh task (every 0:15:00)
+2025-06-16 00:10:58,189 - token_manager - INFO - Periodic token check triggered
+2025-06-16 00:10:58,191 - token_manager - INFO - Token valid for 833 seconds
+2025-06-16 00:10:58,192 - token_manager - INFO - Periodic token check completed successfully
+2025-06-16 00:11:01,745 - middlewares - INFO - Request started: POST /verification/request-email-verification-link
+2025-06-16 00:11:01,748 - email_routes - INFO - Requesting email verification link
+2025-06-16 00:11:01,764 - token_manager - INFO - Token valid for 830 seconds
+2025-06-16 00:11:01,765 - verification_utils - INFO - Sending Email Verification Link request to https://abhasbx.abdm.gov.in/abha/api/v3/profile/account/request/emailVerificationLink
+2025-06-16 00:11:02,288 - verification_utils - ERROR - ABDM API error: 400 - Invalid X-token
+2025-06-16 00:11:02,290 - middlewares - INFO - Request completed: POST /verification/request-email-verification-link - Status: 400 - Time: 0.545s
+2025-06-16 00:11:35,108 - middlewares - INFO - Request started: POST /verification/request-email-verification-link
+2025-06-16 00:11:35,110 - email_routes - INFO - Requesting email verification link
+2025-06-16 00:11:35,110 - token_manager - INFO - Token valid for 796 seconds
+2025-06-16 00:11:35,111 - verification_utils - INFO - Sending Email Verification Link request to https://abhasbx.abdm.gov.in/abha/api/v3/profile/account/request/emailVerificationLink
+2025-06-16 00:11:35,617 - verification_utils - ERROR - ABDM API error: 400 - Invalid X-token
+2025-06-16 00:11:35,619 - middlewares - INFO - Request completed: POST /verification/request-email-verification-link - Status: 400 - Time: 0.510s
+2025-06-16 00:11:49,057 - middlewares - INFO - Request started: POST /verification/initiate-aadhaar-otp
+2025-06-16 00:11:49,063 - aadhaar_routes - INFO - Initiating Aadhaar OTP verification
+2025-06-16 00:11:49,066 - token_manager - INFO - Token valid for 782 seconds
+2025-06-16 00:11:49,067 - verification_utils - INFO - Sending Aadhaar OTP initiation request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/request/otp
+2025-06-16 00:11:51,536 - aadhaar_routes - INFO - OTP initiation successful, txnId: 388a069c-e435-4294-b151-520a0fd3b748
+2025-06-16 00:11:51,540 - middlewares - INFO - Request completed: POST /verification/initiate-aadhaar-otp - Status: 200 - Time: 2.483s
+2025-06-16 00:12:07,404 - middlewares - INFO - Request started: POST /verification/initiate-aadhaar-otp
+2025-06-16 00:12:07,405 - aadhaar_routes - INFO - Initiating Aadhaar OTP verification
+2025-06-16 00:12:07,406 - token_manager - INFO - Token valid for 764 seconds
+2025-06-16 00:12:07,407 - verification_utils - INFO - Sending Aadhaar OTP initiation request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/request/otp
+2025-06-16 00:12:08,340 - verification_utils - ERROR - ABDM API error: 429 - You can request for new OTP after 30 seconds
+2025-06-16 00:12:08,341 - middlewares - INFO - Request completed: POST /verification/initiate-aadhaar-otp - Status: 429 - Time: 0.937s
+2025-06-16 00:12:56,705 - middlewares - INFO - Request started: POST /verification/enroll-by-aadhaar
+2025-06-16 00:12:56,708 - aadhaar_routes - INFO - Processing ABHA enrollment request with txnId: 388a069c-e435-4294-b151-520a0fd3b748
+2025-06-16 00:12:56,709 - token_manager - INFO - Token valid for 715 seconds
+2025-06-16 00:12:56,709 - verification_utils - INFO - Sending ABHA enrollment request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/enrol/byAadhaar
+2025-06-16 00:12:58,443 - aadhaar_routes - INFO - ABHA enrollment successful
+2025-06-16 00:12:58,445 - abha_profile_service - INFO - ABHA profile saved successfully for 91-6464-3246-8064
+2025-06-16 00:12:58,446 - aadhaar_routes - INFO - ABHA profile saved for 91-6464-3246-8064
+2025-06-16 00:12:58,447 - middlewares - INFO - Request completed: POST /verification/enroll-by-aadhaar - Status: 200 - Time: 1.743s
+2025-06-16 00:13:24,103 - middlewares - INFO - Request started: POST /verification/request-email-verification-link
+2025-06-16 00:13:24,104 - email_routes - INFO - Requesting email verification link
+2025-06-16 00:13:24,105 - token_manager - INFO - Token valid for 687 seconds
+2025-06-16 00:13:24,106 - verification_utils - INFO - Sending Email Verification Link request to https://abhasbx.abdm.gov.in/abha/api/v3/profile/account/request/emailVerificationLink
+2025-06-16 00:13:24,608 - verification_utils - ERROR - ABDM API error: 400 - Invalid X-token
+2025-06-16 00:13:24,610 - middlewares - INFO - Request completed: POST /verification/request-email-verification-link - Status: 400 - Time: 0.507s
+2025-06-16 00:14:41,432 - middlewares - INFO - Request started: POST /verification/request-email-verification-link
+2025-06-16 00:14:41,435 - email_routes - INFO - Requesting email verification link
+2025-06-16 00:14:41,437 - token_manager - INFO - Token valid for 610 seconds
+2025-06-16 00:14:41,438 - verification_utils - INFO - Sending Email Verification Link request to https://abhasbx.abdm.gov.in/abha/api/v3/profile/account/request/emailVerificationLink
+2025-06-16 00:14:41,962 - verification_utils - ERROR - ABDM API error: 400 - Invalid X-token
+2025-06-16 00:14:41,965 - middlewares - INFO - Request completed: POST /verification/request-email-verification-link - Status: 400 - Time: 0.534s
+2025-06-16 00:20:11,006 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 00:20:11,009 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 00:20:11,090 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 00:20:11,143 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 00:20:11,144 - main - INFO - Starting ABDM Integration API server on 0.0.0.0:8002
+2025-06-16 00:20:11,217 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 00:20:11,219 - main - INFO - Starting ABDM Integration API
+2025-06-16 00:20:11,220 - main - INFO - Periodic token refresh task started
+2025-06-16 00:20:11,221 - public_key_service - INFO - Public key refresh scheduler started
+2025-06-16 00:20:11,221 - main - INFO - Public key manager initialized
+2025-06-16 00:20:11,221 - token_manager - INFO - Starting periodic token refresh task (every 0:15:00)
+2025-06-16 00:20:11,222 - token_manager - INFO - Periodic token check triggered
+2025-06-16 00:20:11,222 - token_manager - INFO - Token valid for 280 seconds
+2025-06-16 00:20:11,222 - token_manager - INFO - Periodic token check completed successfully
+2025-06-16 00:20:13,857 - middlewares - INFO - Request started: GET /docs
+2025-06-16 00:20:13,859 - middlewares - INFO - Request completed: GET /docs - Status: 200 - Time: 0.002s
+2025-06-16 00:20:14,065 - middlewares - INFO - Request started: GET /openapi.json
+2025-06-16 00:20:14,092 - middlewares - INFO - Request completed: GET /openapi.json - Status: 200 - Time: 0.027s
+2025-06-16 00:20:31,938 - middlewares - INFO - Request started: POST /verification/initiate-aadhaar-otp
+2025-06-16 00:20:31,941 - aadhaar_routes - INFO - Initiating Aadhaar OTP verification
+2025-06-16 00:20:31,957 - token_manager - INFO - Token valid for 260 seconds
+2025-06-16 00:20:31,958 - verification_utils - INFO - Sending Aadhaar OTP initiation request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/request/otp
+2025-06-16 00:20:34,840 - aadhaar_routes - INFO - OTP initiation successful, txnId: 5d4fb19b-b4a8-467c-a9b8-4c560340e5c5
+2025-06-16 00:20:34,843 - middlewares - INFO - Request completed: POST /verification/initiate-aadhaar-otp - Status: 200 - Time: 2.904s
+2025-06-16 00:21:31,857 - middlewares - INFO - Request started: POST /verification/initiate-aadhaar-otp
+2025-06-16 00:21:31,859 - aadhaar_routes - INFO - Initiating Aadhaar OTP verification
+2025-06-16 00:21:31,861 - token_manager - INFO - Token valid for 200 seconds
+2025-06-16 00:21:31,862 - verification_utils - INFO - Sending Aadhaar OTP initiation request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/request/otp
+2025-06-16 00:21:34,279 - aadhaar_routes - INFO - OTP initiation successful, txnId: 0d6d6b8b-53d4-42f5-a09f-db71064e12c6
+2025-06-16 00:21:34,282 - middlewares - INFO - Request completed: POST /verification/initiate-aadhaar-otp - Status: 200 - Time: 2.425s
+2025-06-16 00:22:18,867 - middlewares - INFO - Request started: POST /verification/enroll-by-aadhaar
+2025-06-16 00:22:18,870 - aadhaar_routes - INFO - Processing ABHA enrollment request with txnId: 0d6d6b8b-53d4-42f5-a09f-db71064e12c6
+2025-06-16 00:22:18,879 - token_manager - INFO - Token valid for 153 seconds
+2025-06-16 00:22:18,879 - verification_utils - INFO - Sending ABHA enrollment request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/enrol/byAadhaar
+2025-06-16 00:22:20,470 - verification_utils - ERROR - ABDM API error: 422 - {'error': {'code': 'ABDM-1204', 'message': 'UIDAI Error code : 400 : OTP validation failed'}}
+2025-06-16 00:22:20,471 - middlewares - INFO - Request completed: POST /verification/enroll-by-aadhaar - Status: 422 - Time: 1.603s
+2025-06-16 00:22:35,058 - middlewares - INFO - Request started: POST /verification/enroll-by-aadhaar
+2025-06-16 00:22:35,061 - aadhaar_routes - INFO - Processing ABHA enrollment request with txnId: 5d4fb19b-b4a8-467c-a9b8-4c560340e5c5
+2025-06-16 00:22:35,063 - token_manager - INFO - Token valid for 136 seconds
+2025-06-16 00:22:35,063 - verification_utils - INFO - Sending ABHA enrollment request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/enrol/byAadhaar
+2025-06-16 00:22:36,897 - verification_utils - ERROR - ABDM API error: 422 - {'error': {'code': 'ABDM-1204', 'message': 'UIDAI Error code : 400 : OTP validation failed'}}
+2025-06-16 00:22:36,900 - middlewares - INFO - Request completed: POST /verification/enroll-by-aadhaar - Status: 422 - Time: 1.842s
+2025-06-16 00:22:40,003 - middlewares - INFO - Request started: POST /verification/enroll-by-aadhaar
+2025-06-16 00:22:40,004 - aadhaar_routes - INFO - Processing ABHA enrollment request with txnId: 5d4fb19b-b4a8-467c-a9b8-4c560340e5c5
+2025-06-16 00:22:40,005 - token_manager - INFO - Token valid for 131 seconds
+2025-06-16 00:22:40,005 - verification_utils - INFO - Sending ABHA enrollment request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/enrol/byAadhaar
+2025-06-16 00:22:41,214 - verification_utils - ERROR - ABDM API error: 422 - {'error': {'code': 'ABDM-1204', 'message': 'UIDAI Error code : 400 : OTP validation failed'}}
+2025-06-16 00:22:41,216 - middlewares - INFO - Request completed: POST /verification/enroll-by-aadhaar - Status: 422 - Time: 1.212s
+2025-06-16 00:22:56,328 - middlewares - INFO - Request started: POST /verification/enroll-by-aadhaar
+2025-06-16 00:22:56,329 - aadhaar_routes - INFO - Processing ABHA enrollment request with txnId: 0d6d6b8b-53d4-42f5-a09f-db71064e12c6
+2025-06-16 00:22:56,330 - token_manager - INFO - Token expired or expiring soon. Time left: 115 seconds
+2025-06-16 00:22:56,330 - token_manager - INFO - Token needs refresh
+2025-06-16 00:22:56,331 - token_manager - INFO - Attempting to use refresh token
+2025-06-16 00:22:56,331 - token_manager - INFO - Refreshing token for SBXID_009850
+2025-06-16 00:22:56,727 - token_manager - ERROR - Failed to refresh token: 401 - {"error":{"code":2500,"message":"Invalid client secret"}}
+2025-06-16 00:22:56,727 - token_manager - ERROR - Unexpected error refreshing token: Failed to refresh token: 401 - {"error":{"code":2500,"message":"Invalid client secret"}} - Details: {'status_code': 401}
+2025-06-16 00:22:56,728 - token_manager - WARNING - Refresh token failed, trying client credentials
+2025-06-16 00:22:56,730 - token_manager - INFO - Getting completely new token
+2025-06-16 00:22:56,731 - token_manager - INFO - Fetching new token for SBXID_009850
+2025-06-16 00:22:57,601 - token_manager - INFO - New token fetched successfully for SBXID_009850
+2025-06-16 00:22:57,603 - token_manager - INFO - New token fetched and saved
+2025-06-16 00:22:57,604 - verification_utils - INFO - Sending ABHA enrollment request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/enrol/byAadhaar
+2025-06-16 00:22:58,208 - verification_utils - ERROR - ABDM API error: 429 - {'error': {'code': 'ABDM-1100', 'message': 'You have requested multiple OTPs Or Exceeded maximum number of attempts for OTP match in this transaction. Please try again in 30 minutes.'}}
+2025-06-16 00:22:58,210 - middlewares - INFO - Request completed: POST /verification/enroll-by-aadhaar - Status: 429 - Time: 1.881s
+2025-06-16 00:24:05,416 - middlewares - INFO - Request started: POST /verification/initiate-aadhaar-otp
+2025-06-16 00:24:05,419 - aadhaar_routes - INFO - Initiating Aadhaar OTP verification
+2025-06-16 00:24:05,455 - token_manager - INFO - Token valid for 1132 seconds
+2025-06-16 00:24:05,456 - verification_utils - INFO - Sending Aadhaar OTP initiation request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/request/otp
+2025-06-16 00:24:06,185 - verification_utils - ERROR - ABDM API error: 429 - {'error': {'code': 'ABDM-1100', 'message': 'You have requested multiple OTPs Or Exceeded maximum number of attempts for OTP match in this transaction. Please try again in 30 minutes.'}}
+2025-06-16 00:24:06,186 - middlewares - INFO - Request completed: POST /verification/initiate-aadhaar-otp - Status: 429 - Time: 0.769s
+2025-06-16 00:24:09,106 - middlewares - INFO - Request started: POST /verification/initiate-aadhaar-otp
+2025-06-16 00:24:09,107 - aadhaar_routes - INFO - Initiating Aadhaar OTP verification
+2025-06-16 00:24:09,108 - token_manager - INFO - Token valid for 1128 seconds
+2025-06-16 00:24:09,109 - verification_utils - INFO - Sending Aadhaar OTP initiation request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/request/otp
+2025-06-16 00:24:10,022 - verification_utils - ERROR - ABDM API error: 429 - {'error': {'code': 'ABDM-1100', 'message': 'You have requested multiple OTPs Or Exceeded maximum number of attempts for OTP match in this transaction. Please try again in 30 minutes.'}}
+2025-06-16 00:24:10,023 - middlewares - INFO - Request completed: POST /verification/initiate-aadhaar-otp - Status: 429 - Time: 0.917s
+2025-06-16 00:31:42,915 - middlewares - INFO - Request started: GET /docs
+2025-06-16 00:31:42,918 - middlewares - INFO - Request completed: GET /docs - Status: 200 - Time: 0.003s
+2025-06-16 00:31:43,117 - middlewares - INFO - Request started: GET /openapi.json
+2025-06-16 00:31:43,119 - middlewares - INFO - Request completed: GET /openapi.json - Status: 200 - Time: 0.001s
+2025-06-16 00:32:05,841 - middlewares - INFO - Request started: POST /verification/initiate-aadhaar-otp
+2025-06-16 00:32:05,841 - aadhaar_routes - INFO - Initiating Aadhaar OTP verification
+2025-06-16 00:32:05,843 - token_manager - INFO - Token valid for 652 seconds
+2025-06-16 00:32:05,850 - verification_utils - INFO - Sending Aadhaar OTP initiation request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/request/otp
+2025-06-16 00:32:08,227 - aadhaar_routes - INFO - OTP initiation successful, txnId: 5981ddb8-c88d-4b7d-86eb-8e158f3151c4
+2025-06-16 00:32:08,230 - middlewares - INFO - Request completed: POST /verification/initiate-aadhaar-otp - Status: 200 - Time: 2.391s
+2025-06-16 00:32:39,461 - middlewares - INFO - Request started: POST /verification/enroll-by-aadhaar
+2025-06-16 00:32:39,463 - aadhaar_routes - INFO - Processing ABHA enrollment request with txnId: 5981ddb8-c88d-4b7d-86eb-8e158f3151c4
+2025-06-16 00:32:39,464 - token_manager - INFO - Token valid for 618 seconds
+2025-06-16 00:32:39,465 - verification_utils - INFO - Sending ABHA enrollment request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/enrol/byAadhaar
+2025-06-16 00:32:41,328 - aadhaar_routes - INFO - ABHA enrollment successful
+2025-06-16 00:32:41,332 - abha_profile_service - INFO - ABHA profile saved successfully for 91-6464-3246-8064
+2025-06-16 00:32:41,333 - aadhaar_routes - INFO - ABHA profile saved for 91-6464-3246-8064
+2025-06-16 00:32:41,334 - middlewares - INFO - Request completed: POST /verification/enroll-by-aadhaar - Status: 200 - Time: 1.873s
+2025-06-16 00:33:05,339 - middlewares - INFO - Request started: POST /verification/request-email-verification-link
+2025-06-16 00:33:05,344 - email_routes - INFO - Requesting email verification link
+2025-06-16 00:33:05,347 - token_manager - INFO - Token valid for 592 seconds
+2025-06-16 00:33:05,347 - verification_utils - INFO - Sending Email Verification Link request to https://abhasbx.abdm.gov.in/abha/api/v3/profile/account/request/emailVerificationLink
+2025-06-16 00:33:06,109 - middlewares - INFO - Request completed: POST /verification/request-email-verification-link - Status: 200 - Time: 0.771s
+2025-06-16 00:35:11,233 - token_manager - INFO - Periodic token check triggered
+2025-06-16 00:35:11,236 - token_manager - INFO - Token valid for 466 seconds
+2025-06-16 00:35:11,238 - token_manager - INFO - Periodic token check completed successfully
+2025-06-16 00:36:52,593 - middlewares - INFO - Request started: GET /docs
+2025-06-16 00:36:52,596 - middlewares - INFO - Request completed: GET /docs - Status: 200 - Time: 0.003s
+2025-06-16 00:36:52,780 - middlewares - INFO - Request started: GET /openapi.json
+2025-06-16 00:36:52,782 - middlewares - INFO - Request completed: GET /openapi.json - Status: 200 - Time: 0.002s
+2025-06-16 00:41:46,645 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 00:41:46,648 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 00:41:46,729 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 00:41:46,761 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 00:41:46,762 - main - INFO - Starting ABDM Integration API server on 0.0.0.0:8002
+2025-06-16 00:41:46,834 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 00:41:46,835 - main - INFO - Starting ABDM Integration API
+2025-06-16 00:41:46,835 - main - INFO - Periodic token refresh task started
+2025-06-16 00:41:46,837 - public_key_service - INFO - Public key refresh scheduler started
+2025-06-16 00:41:46,837 - main - INFO - Public key manager initialized
+2025-06-16 00:41:46,837 - token_manager - INFO - Starting periodic token refresh task (every 0:15:00)
+2025-06-16 00:41:46,838 - token_manager - INFO - Periodic token check triggered
+2025-06-16 00:41:46,838 - token_manager - INFO - Token expired or expiring soon. Time left: 71 seconds
+2025-06-16 00:41:46,838 - token_manager - INFO - Token needs refresh
+2025-06-16 00:41:46,840 - token_manager - INFO - Attempting to use refresh token
+2025-06-16 00:41:46,840 - token_manager - INFO - Refreshing token for SBXID_009850
+2025-06-16 00:41:47,730 - token_manager - ERROR - Failed to refresh token: 401 - {"error":{"code":2500,"message":"Invalid client secret"}}
+2025-06-16 00:41:47,730 - token_manager - ERROR - Unexpected error refreshing token: Failed to refresh token: 401 - {"error":{"code":2500,"message":"Invalid client secret"}} - Details: {'status_code': 401}
+2025-06-16 00:41:47,731 - token_manager - WARNING - Refresh token failed, trying client credentials
+2025-06-16 00:41:47,732 - token_manager - INFO - Getting completely new token
+2025-06-16 00:41:47,733 - token_manager - INFO - Fetching new token for SBXID_009850
+2025-06-16 00:41:48,288 - token_manager - INFO - New token fetched successfully for SBXID_009850
+2025-06-16 00:41:48,290 - token_manager - INFO - New token fetched and saved
+2025-06-16 00:41:48,290 - token_manager - INFO - Periodic token check completed successfully
+2025-06-16 00:41:48,933 - middlewares - INFO - Request started: GET /docs
+2025-06-16 00:41:48,934 - middlewares - INFO - Request completed: GET /docs - Status: 200 - Time: 0.001s
+2025-06-16 00:41:49,079 - middlewares - INFO - Request started: GET /openapi.json
+2025-06-16 00:41:49,111 - middlewares - INFO - Request completed: GET /openapi.json - Status: 200 - Time: 0.032s
+2025-06-16 00:43:38,459 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 00:43:38,462 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 00:43:38,579 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 00:43:38,630 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 00:43:38,631 - main - INFO - Starting ABDM Integration API server on 0.0.0.0:8002
+2025-06-16 00:43:38,717 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 00:43:38,719 - main - INFO - Starting ABDM Integration API
+2025-06-16 00:43:38,719 - main - INFO - Periodic token refresh task started
+2025-06-16 00:43:38,720 - public_key_service - INFO - Public key refresh scheduler started
+2025-06-16 00:43:38,721 - main - INFO - Public key manager initialized
+2025-06-16 00:43:38,721 - token_manager - INFO - Starting periodic token refresh task (every 0:15:00)
+2025-06-16 00:43:38,721 - token_manager - INFO - Periodic token check triggered
+2025-06-16 00:43:38,722 - token_manager - INFO - Token valid for 1090 seconds
+2025-06-16 00:43:38,722 - token_manager - INFO - Periodic token check completed successfully
+2025-06-16 00:43:41,555 - middlewares - INFO - Request started: GET /docs
+2025-06-16 00:43:41,557 - middlewares - INFO - Request completed: GET /docs - Status: 200 - Time: 0.002s
+2025-06-16 00:43:41,712 - middlewares - INFO - Request started: GET /openapi.json
+2025-06-16 00:43:41,741 - middlewares - INFO - Request completed: GET /openapi.json - Status: 200 - Time: 0.029s
+2025-06-16 00:44:08,109 - middlewares - INFO - Request started: POST /verification/initiate-aadhaar-otp
+2025-06-16 00:44:08,114 - aadhaar_routes - INFO - Initiating Aadhaar OTP verification
+2025-06-16 00:44:08,142 - token_manager - INFO - Token valid for 1060 seconds
+2025-06-16 00:44:08,144 - verification_utils - INFO - Sending Aadhaar OTP initiation request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/request/otp
+2025-06-16 00:44:10,768 - aadhaar_routes - INFO - OTP initiation successful, txnId: 370cc4c6-62f6-41bf-b034-7b5cf8aafaa3
+2025-06-16 00:44:10,770 - middlewares - INFO - Request completed: POST /verification/initiate-aadhaar-otp - Status: 200 - Time: 2.661s
+2025-06-16 00:45:07,880 - middlewares - INFO - Request started: POST /verification/enroll-by-aadhaar
+2025-06-16 00:45:07,888 - aadhaar_routes - INFO - Processing ABHA enrollment request with txnId: 370cc4c6-62f6-41bf-b034-7b5cf8aafaa3
+2025-06-16 00:45:07,892 - token_manager - INFO - Token valid for 1001 seconds
+2025-06-16 00:45:07,893 - verification_utils - INFO - Sending ABHA enrollment request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/enrol/byAadhaar
+2025-06-16 00:45:09,555 - aadhaar_routes - INFO - ABHA enrollment successful
+2025-06-16 00:45:09,562 - abha_profile_service - INFO - ABHA profile saved successfully for 91-6464-3246-8064
+2025-06-16 00:45:09,564 - aadhaar_routes - INFO - ABHA profile saved for 91-6464-3246-8064
+2025-06-16 00:45:09,570 - middlewares - INFO - Request completed: POST /verification/enroll-by-aadhaar - Status: 200 - Time: 1.688s
+2025-06-16 00:46:42,029 - middlewares - INFO - Request started: POST /verification/request-email-verification-link
+2025-06-16 00:46:42,035 - email_routes - INFO - Requesting email verification link
+2025-06-16 00:46:42,038 - token_manager - INFO - Token valid for 906 seconds
+2025-06-16 00:46:42,040 - verification_utils - INFO - Sending Email Verification Link request to https://abhasbx.abdm.gov.in/abha/api/v3/profile/account/request/emailVerificationLink
+2025-06-16 00:46:43,556 - middlewares - INFO - Request completed: POST /verification/request-email-verification-link - Status: 200 - Time: 1.528s
+2025-06-16 00:58:38,739 - token_manager - INFO - Periodic token check triggered
+2025-06-16 00:58:38,742 - token_manager - INFO - Token valid for 190 seconds
+2025-06-16 00:58:38,743 - token_manager - INFO - Periodic token check completed successfully
+2025-06-16 01:13:38,755 - token_manager - INFO - Periodic token check triggered
+2025-06-16 01:13:38,757 - token_manager - INFO - Token expired or expiring soon. Time left: 0 seconds
+2025-06-16 01:13:38,758 - token_manager - INFO - Token needs refresh
+2025-06-16 01:13:38,759 - token_manager - INFO - Attempting to use refresh token
+2025-06-16 01:13:38,760 - token_manager - INFO - Refreshing token for SBXID_009850
+2025-06-16 01:13:39,392 - token_manager - ERROR - Failed to refresh token: 401 - {"error":{"code":2500,"message":"Invalid client secret"}}
+2025-06-16 01:13:39,393 - token_manager - ERROR - Unexpected error refreshing token: Failed to refresh token: 401 - {"error":{"code":2500,"message":"Invalid client secret"}} - Details: {'status_code': 401}
+2025-06-16 01:13:39,395 - token_manager - WARNING - Refresh token failed, trying client credentials
+2025-06-16 01:13:39,396 - token_manager - INFO - Getting completely new token
+2025-06-16 01:13:39,397 - token_manager - INFO - Fetching new token for SBXID_009850
+2025-06-16 01:13:40,345 - token_manager - INFO - New token fetched successfully for SBXID_009850
+2025-06-16 01:13:40,350 - token_manager - INFO - New token fetched and saved
+2025-06-16 01:13:40,352 - token_manager - INFO - Periodic token check completed successfully
+2025-06-16 01:28:40,349 - token_manager - INFO - Periodic token check triggered
+2025-06-16 01:28:40,397 - token_manager - INFO - Token valid for 300 seconds
+2025-06-16 01:28:40,398 - token_manager - INFO - Periodic token check completed successfully
+2025-06-16 01:43:40,406 - token_manager - INFO - Periodic token check triggered
+2025-06-16 01:43:40,451 - token_manager - INFO - Token expired or expiring soon. Time left: 0 seconds
+2025-06-16 01:43:40,452 - token_manager - INFO - Token needs refresh
+2025-06-16 01:43:40,453 - token_manager - INFO - Attempting to use refresh token
+2025-06-16 01:43:40,453 - token_manager - INFO - Refreshing token for SBXID_009850
+2025-06-16 01:43:42,187 - token_manager - ERROR - Failed to refresh token: 401 - {"error":{"code":2500,"message":"Invalid client secret"}}
+2025-06-16 01:43:42,188 - token_manager - ERROR - Unexpected error refreshing token: Failed to refresh token: 401 - {"error":{"code":2500,"message":"Invalid client secret"}} - Details: {'status_code': 401}
+2025-06-16 01:43:42,190 - token_manager - WARNING - Refresh token failed, trying client credentials
+2025-06-16 01:43:42,192 - token_manager - INFO - Getting completely new token
+2025-06-16 01:43:42,193 - token_manager - INFO - Fetching new token for SBXID_009850
+2025-06-16 01:43:42,809 - token_manager - INFO - New token fetched successfully for SBXID_009850
+2025-06-16 01:43:42,813 - token_manager - INFO - New token fetched and saved
+2025-06-16 01:43:42,813 - token_manager - INFO - Periodic token check completed successfully
+2025-06-16 01:49:27,156 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 01:49:27,162 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 01:49:27,364 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 01:49:27,456 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 01:49:27,458 - main - INFO - Starting ABDM Integration API server on 0.0.0.0:8002
+2025-06-16 01:49:27,551 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 01:49:27,554 - main - INFO - Starting ABDM Integration API
+2025-06-16 01:49:27,555 - main - INFO - Periodic token refresh task started
+2025-06-16 01:49:27,569 - public_key_service - INFO - Public key refresh scheduler started
+2025-06-16 01:49:27,570 - main - INFO - Public key manager initialized
+2025-06-16 01:49:27,570 - token_manager - INFO - Starting periodic token refresh task (every 0:15:00)
+2025-06-16 01:49:27,571 - token_manager - INFO - Periodic token check triggered
+2025-06-16 01:49:27,571 - token_manager - INFO - Token valid for 855 seconds
+2025-06-16 01:49:27,572 - token_manager - INFO - Periodic token check completed successfully
+2025-06-16 01:49:40,716 - middlewares - INFO - Request started: GET /docs
+2025-06-16 01:49:40,718 - middlewares - INFO - Request completed: GET /docs - Status: 200 - Time: 0.002s
+2025-06-16 01:49:40,891 - middlewares - INFO - Request started: GET /openapi.json
+2025-06-16 01:49:40,917 - middlewares - INFO - Request completed: GET /openapi.json - Status: 200 - Time: 0.027s
+2025-06-16 01:49:59,826 - middlewares - INFO - Request started: POST /verification/initiate-aadhaar-otp
+2025-06-16 01:49:59,829 - aadhaar_routes - INFO - Initiating Aadhaar OTP verification
+2025-06-16 01:49:59,847 - token_manager - INFO - Token valid for 823 seconds
+2025-06-16 01:49:59,848 - verification_utils - INFO - Sending Aadhaar OTP initiation request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/request/otp
+2025-06-16 01:50:03,878 - aadhaar_routes - INFO - OTP initiation successful, txnId: 2df86e9d-9680-4e0e-bdf0-6473cb165bc4
+2025-06-16 01:50:03,881 - middlewares - INFO - Request completed: POST /verification/initiate-aadhaar-otp - Status: 200 - Time: 4.054s
+2025-06-16 01:50:26,803 - middlewares - INFO - Request started: POST /verification/enrol-suggestion
+2025-06-16 01:50:26,805 - suggestion_routes - INFO - Requesting username suggestion
+2025-06-16 01:50:26,806 - token_manager - INFO - Token valid for 796 seconds
+2025-06-16 01:50:26,806 - verification_utils - INFO - Sending Username Suggestion request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/enrol/suggestion
+2025-06-16 01:50:27,552 - verification_utils - ERROR - ABDM API error: 405 - Runtime Error
+2025-06-16 01:50:27,554 - middlewares - INFO - Request completed: POST /verification/enrol-suggestion - Status: 405 - Time: 0.751s
+2025-06-16 01:51:08,373 - middlewares - INFO - Request started: POST /verification/enroll-by-aadhaar
+2025-06-16 01:51:08,382 - aadhaar_routes - INFO - Processing ABHA enrollment request with txnId: 2df86e9d-9680-4e0e-bdf0-6473cb165bc4
+2025-06-16 01:51:08,386 - token_manager - INFO - Token valid for 754 seconds
+2025-06-16 01:51:08,387 - verification_utils - INFO - Sending ABHA enrollment request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/enrol/byAadhaar
+2025-06-16 01:51:10,335 - aadhaar_routes - INFO - ABHA enrollment successful
+2025-06-16 01:51:10,341 - abha_profile_service - INFO - ABHA profile saved successfully for 91-6464-3246-8064
+2025-06-16 01:51:10,343 - aadhaar_routes - INFO - ABHA profile saved for 91-6464-3246-8064
+2025-06-16 01:51:10,348 - middlewares - INFO - Request completed: POST /verification/enroll-by-aadhaar - Status: 200 - Time: 1.976s
+2025-06-16 01:51:27,535 - middlewares - INFO - Request started: POST /verification/enrol-suggestion
+2025-06-16 01:51:27,536 - suggestion_routes - INFO - Requesting username suggestion
+2025-06-16 01:51:27,537 - token_manager - INFO - Token valid for 735 seconds
+2025-06-16 01:51:27,537 - verification_utils - INFO - Sending Username Suggestion request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/enrol/suggestion
+2025-06-16 01:51:28,033 - verification_utils - ERROR - ABDM API error: 405 - Runtime Error
+2025-06-16 01:51:28,034 - middlewares - INFO - Request completed: POST /verification/enrol-suggestion - Status: 405 - Time: 0.499s
+2025-06-16 01:55:47,072 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 01:55:47,079 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 01:55:47,177 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 01:55:47,261 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 01:55:47,263 - main - INFO - Starting ABDM Integration API server on 0.0.0.0:8002
+2025-06-16 01:55:47,345 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 01:55:47,347 - main - INFO - Starting ABDM Integration API
+2025-06-16 01:55:47,348 - main - INFO - Periodic token refresh task started
+2025-06-16 01:55:47,351 - public_key_service - INFO - Public key refresh scheduler started
+2025-06-16 01:55:47,352 - main - INFO - Public key manager initialized
+2025-06-16 01:55:47,353 - token_manager - INFO - Starting periodic token refresh task (every 0:15:00)
+2025-06-16 01:55:47,353 - token_manager - INFO - Periodic token check triggered
+2025-06-16 01:55:47,354 - token_manager - INFO - Token valid for 475 seconds
+2025-06-16 01:55:47,354 - token_manager - INFO - Periodic token check completed successfully
+2025-06-16 01:55:51,069 - middlewares - INFO - Request started: GET /docs
+2025-06-16 01:55:51,072 - middlewares - INFO - Request completed: GET /docs - Status: 200 - Time: 0.003s
+2025-06-16 01:55:51,247 - middlewares - INFO - Request started: GET /openapi.json
+2025-06-16 01:55:51,276 - middlewares - INFO - Request completed: GET /openapi.json - Status: 200 - Time: 0.030s
+2025-06-16 01:56:04,922 - middlewares - INFO - Request started: POST /verification/initiate-aadhaar-otp
+2025-06-16 01:56:04,924 - aadhaar_routes - INFO - Initiating Aadhaar OTP verification
+2025-06-16 01:56:04,942 - token_manager - INFO - Token valid for 458 seconds
+2025-06-16 01:56:04,943 - verification_utils - INFO - Sending Aadhaar OTP initiation request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/request/otp
+2025-06-16 01:56:07,723 - aadhaar_routes - INFO - OTP initiation successful, txnId: 7e2d2265-4881-43eb-90dc-6c5c95319771
+2025-06-16 01:56:07,726 - middlewares - INFO - Request completed: POST /verification/initiate-aadhaar-otp - Status: 200 - Time: 2.804s
+2025-06-16 01:56:45,250 - middlewares - INFO - Request started: POST /verification/enroll-by-aadhaar
+2025-06-16 01:56:45,254 - aadhaar_routes - INFO - Processing ABHA enrollment request with txnId: 7e2d2265-4881-43eb-90dc-6c5c95319771
+2025-06-16 01:56:45,255 - token_manager - INFO - Token valid for 417 seconds
+2025-06-16 01:56:45,255 - verification_utils - INFO - Sending ABHA enrollment request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/enrol/byAadhaar
+2025-06-16 01:56:47,390 - aadhaar_routes - INFO - ABHA enrollment successful
+2025-06-16 01:56:47,396 - abha_profile_service - INFO - ABHA profile saved successfully for 91-6464-3246-8064
+2025-06-16 01:56:47,399 - aadhaar_routes - INFO - ABHA profile saved for 91-6464-3246-8064
+2025-06-16 01:56:47,403 - middlewares - INFO - Request completed: POST /verification/enroll-by-aadhaar - Status: 200 - Time: 2.154s
+2025-06-16 01:57:03,940 - middlewares - INFO - Request started: GET /verification/enrol-suggestion
+2025-06-16 01:57:03,942 - suggestion_routes - INFO - Requesting username suggestion
+2025-06-16 01:57:03,945 - token_manager - INFO - Token valid for 399 seconds
+2025-06-16 01:57:03,947 - verification_utils - INFO - Sending Username Suggestion request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/enrol/suggestion
+2025-06-16 01:57:04,592 - verification_utils - ERROR - ABDM API error: 405 - Runtime Error
+2025-06-16 01:57:04,593 - middlewares - INFO - Request completed: GET /verification/enrol-suggestion - Status: 405 - Time: 0.653s
+2025-06-16 01:59:04,345 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 01:59:04,348 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 01:59:04,440 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 01:59:04,488 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 01:59:04,489 - main - INFO - Starting ABDM Integration API server on 0.0.0.0:8002
+2025-06-16 01:59:04,560 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 01:59:04,562 - main - INFO - Starting ABDM Integration API
+2025-06-16 01:59:04,562 - main - INFO - Periodic token refresh task started
+2025-06-16 01:59:04,563 - public_key_service - INFO - Public key refresh scheduler started
+2025-06-16 01:59:04,564 - main - INFO - Public key manager initialized
+2025-06-16 01:59:04,564 - token_manager - INFO - Starting periodic token refresh task (every 0:15:00)
+2025-06-16 01:59:04,564 - token_manager - INFO - Periodic token check triggered
+2025-06-16 01:59:04,565 - token_manager - INFO - Token valid for 278 seconds
+2025-06-16 01:59:04,565 - token_manager - INFO - Periodic token check completed successfully
+2025-06-16 01:59:07,126 - middlewares - INFO - Request started: GET /docs
+2025-06-16 01:59:07,129 - middlewares - INFO - Request completed: GET /docs - Status: 200 - Time: 0.003s
+2025-06-16 01:59:07,299 - middlewares - INFO - Request started: GET /openapi.json
+2025-06-16 01:59:07,328 - middlewares - INFO - Request completed: GET /openapi.json - Status: 200 - Time: 0.029s
+2025-06-16 01:59:26,277 - middlewares - INFO - Request started: POST /verification/enrol-suggestion
+2025-06-16 01:59:26,279 - suggestion_routes - INFO - Requesting username suggestion
+2025-06-16 01:59:26,280 - token_manager - INFO - Token valid for 256 seconds
+2025-06-16 01:59:26,280 - verification_utils - INFO - Sending Username Suggestion request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/enrol/suggestion
+2025-06-16 01:59:27,164 - verification_utils - ERROR - ABDM API error: 405 - Runtime Error
+2025-06-16 01:59:27,168 - middlewares - INFO - Request completed: POST /verification/enrol-suggestion - Status: 405 - Time: 0.891s
+2025-06-16 02:03:53,363 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 02:03:53,369 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 02:03:53,537 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 02:07:51,913 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 02:07:51,916 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 02:07:52,045 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 02:07:52,136 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 02:07:52,137 - main - INFO - Starting ABDM Integration API server on 0.0.0.0:8002
+2025-06-16 02:07:52,208 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 02:07:52,210 - main - INFO - Starting ABDM Integration API
+2025-06-16 02:07:52,210 - main - INFO - Periodic token refresh task started
+2025-06-16 02:07:52,213 - public_key_service - INFO - Public key refresh scheduler started
+2025-06-16 02:07:52,213 - main - INFO - Public key manager initialized
+2025-06-16 02:07:52,213 - token_manager - INFO - Starting periodic token refresh task (every 0:15:00)
+2025-06-16 02:07:52,214 - token_manager - INFO - Periodic token check triggered
+2025-06-16 02:07:52,214 - token_manager - INFO - Token expired or expiring soon. Time left: 0 seconds
+2025-06-16 02:07:52,215 - token_manager - INFO - Token needs refresh
+2025-06-16 02:07:52,215 - token_manager - INFO - Attempting to use refresh token
+2025-06-16 02:07:52,215 - token_manager - INFO - Refreshing token for SBXID_009850
+2025-06-16 02:07:52,900 - token_manager - ERROR - Failed to refresh token: 401 - {"error":{"code":2500,"message":"Invalid client secret"}}
+2025-06-16 02:07:52,901 - token_manager - ERROR - Unexpected error refreshing token: Failed to refresh token: 401 - {"error":{"code":2500,"message":"Invalid client secret"}} - Details: {'status_code': 401}
+2025-06-16 02:07:52,903 - token_manager - WARNING - Refresh token failed, trying client credentials
+2025-06-16 02:07:52,904 - token_manager - INFO - Getting completely new token
+2025-06-16 02:07:52,905 - token_manager - INFO - Fetching new token for SBXID_009850
+2025-06-16 02:07:53,622 - token_manager - INFO - New token fetched successfully for SBXID_009850
+2025-06-16 02:07:53,627 - token_manager - INFO - New token fetched and saved
+2025-06-16 02:07:53,629 - token_manager - INFO - Periodic token check completed successfully
+2025-06-16 02:07:59,032 - middlewares - INFO - Request started: GET /docs
+2025-06-16 02:07:59,036 - middlewares - INFO - Request completed: GET /docs - Status: 200 - Time: 0.005s
+2025-06-16 02:07:59,292 - middlewares - INFO - Request started: GET /openapi.json
+2025-06-16 02:07:59,331 - middlewares - INFO - Request completed: GET /openapi.json - Status: 200 - Time: 0.040s
+2025-06-16 02:08:17,173 - middlewares - INFO - Request started: POST /verification/initiate-aadhaar-otp
+2025-06-16 02:08:17,176 - aadhaar_routes - INFO - Initiating Aadhaar OTP verification
+2025-06-16 02:08:17,196 - token_manager - INFO - Token valid for 1176 seconds
+2025-06-16 02:08:17,197 - verification_utils - INFO - Sending Aadhaar OTP initiation request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/request/otp
+2025-06-16 02:08:19,610 - aadhaar_routes - INFO - OTP initiation successful, txnId: b8a401f1-06aa-44c3-932b-29583c375620
+2025-06-16 02:08:19,612 - middlewares - INFO - Request completed: POST /verification/initiate-aadhaar-otp - Status: 200 - Time: 2.439s
+2025-06-16 02:08:51,636 - middlewares - INFO - Request started: POST /verification/enroll-by-aadhaar
+2025-06-16 02:08:51,638 - aadhaar_routes - INFO - Processing ABHA enrollment request with txnId: b8a401f1-06aa-44c3-932b-29583c375620
+2025-06-16 02:08:51,639 - token_manager - INFO - Token valid for 1142 seconds
+2025-06-16 02:08:51,639 - verification_utils - INFO - Sending ABHA enrollment request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/enrol/byAadhaar
+2025-06-16 02:08:53,641 - aadhaar_routes - INFO - ABHA enrollment successful
+2025-06-16 02:08:53,647 - abha_profile_service - INFO - ABHA profile saved successfully for 91-6464-3246-8064
+2025-06-16 02:08:53,650 - aadhaar_routes - INFO - ABHA profile saved for 91-6464-3246-8064
+2025-06-16 02:08:53,653 - middlewares - INFO - Request completed: POST /verification/enroll-by-aadhaar - Status: 200 - Time: 2.017s
+2025-06-16 02:09:06,326 - middlewares - INFO - Request started: GET /verification/enrol-suggestion
+2025-06-16 02:09:06,328 - enrol_suggestion_routes - INFO - Fetching ABHA address suggestions for txnId: b8a401f1-06aa-44c3-932b-29583c375620
+2025-06-16 02:09:06,331 - token_manager - INFO - Token valid for 1127 seconds
+2025-06-16 02:09:06,333 - verification_utils - INFO - Sending Enrol Suggestion request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/enrol/suggestion
+2025-06-16 02:09:07,526 - verification_utils - ERROR - ABDM API error: 500 - {'error': {'code': 'ABDM-1019', 'message': '[404 Not Found] during [POST] to [http-//phr2sbx.abdm.gov.internal/api/v3/abhaAddress/enrollment/abha-address/suggestion] [PhrAppFClient#getABHAAddressSuggestionForABHA(String,String,SuggestAbhaAddressRequestDto)]- [{"code"-"ABDM-1016- ","message"-"Invalid Timestamp"}]'}}
+2025-06-16 02:09:07,536 - middlewares - INFO - Request completed: GET /verification/enrol-suggestion - Status: 502 - Time: 1.211s
+2025-06-16 02:12:52,442 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 02:12:52,445 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 02:12:52,565 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 02:12:52,605 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 02:12:52,606 - main - INFO - Starting ABDM Integration API server on 0.0.0.0:8002
+2025-06-16 02:12:52,676 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 02:12:52,677 - main - INFO - Starting ABDM Integration API
+2025-06-16 02:12:52,678 - main - INFO - Periodic token refresh task started
+2025-06-16 02:12:52,679 - public_key_service - INFO - Public key refresh scheduler started
+2025-06-16 02:12:52,680 - main - INFO - Public key manager initialized
+2025-06-16 02:12:52,680 - token_manager - INFO - Starting periodic token refresh task (every 0:15:00)
+2025-06-16 02:12:52,682 - token_manager - INFO - Periodic token check triggered
+2025-06-16 02:12:52,682 - token_manager - INFO - Token valid for 901 seconds
+2025-06-16 02:12:52,682 - token_manager - INFO - Periodic token check completed successfully
+2025-06-16 02:12:55,436 - middlewares - INFO - Request started: GET /docs
+2025-06-16 02:12:55,440 - middlewares - INFO - Request completed: GET /docs - Status: 200 - Time: 0.005s
+2025-06-16 02:12:55,628 - middlewares - INFO - Request started: GET /openapi.json
+2025-06-16 02:12:55,656 - middlewares - INFO - Request completed: GET /openapi.json - Status: 200 - Time: 0.028s
+2025-06-16 02:13:16,685 - middlewares - INFO - Request started: GET /verification/enrol-suggestion
+2025-06-16 02:13:16,686 - enrol_suggestion_routes - INFO - Fetching ABHA address suggestions for txnId: b8a401f1-06aa-44c3-932b-29583c375620
+2025-06-16 02:13:16,687 - token_manager - INFO - Token valid for 877 seconds
+2025-06-16 02:13:16,688 - verification_utils - INFO - Sending Enrol Suggestion request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/enrol/suggestion
+2025-06-16 02:13:17,478 - verification_utils - ERROR - ABDM API error: 404 - Invalid Timestamp
+2025-06-16 02:13:17,479 - middlewares - INFO - Request completed: GET /verification/enrol-suggestion - Status: 404 - Time: 0.794s
+2025-06-16 02:14:37,644 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 02:14:37,649 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 02:14:37,769 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 02:14:37,831 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 02:14:37,832 - main - INFO - Starting ABDM Integration API server on 0.0.0.0:8002
+2025-06-16 02:14:37,901 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 02:14:37,902 - main - INFO - Starting ABDM Integration API
+2025-06-16 02:14:37,903 - main - INFO - Periodic token refresh task started
+2025-06-16 02:14:37,904 - public_key_service - INFO - Public key refresh scheduler started
+2025-06-16 02:14:37,904 - main - INFO - Public key manager initialized
+2025-06-16 02:14:37,905 - token_manager - INFO - Starting periodic token refresh task (every 0:15:00)
+2025-06-16 02:14:37,905 - token_manager - INFO - Periodic token check triggered
+2025-06-16 02:14:37,905 - token_manager - INFO - Token valid for 796 seconds
+2025-06-16 02:14:37,906 - token_manager - INFO - Periodic token check completed successfully
+2025-06-16 02:14:42,373 - middlewares - INFO - Request started: GET /docs
+2025-06-16 02:14:42,376 - middlewares - INFO - Request completed: GET /docs - Status: 200 - Time: 0.003s
+2025-06-16 02:14:42,543 - middlewares - INFO - Request started: GET /openapi.json
+2025-06-16 02:14:42,568 - middlewares - INFO - Request completed: GET /openapi.json - Status: 200 - Time: 0.025s
+2025-06-16 02:14:57,721 - middlewares - INFO - Request started: GET /verification/enrol-suggestion
+2025-06-16 02:14:57,722 - enrol_suggestion_routes - INFO - Fetching ABHA address suggestions for txnId: b8a401f1-06aa-44c3-932b-29583c375620
+2025-06-16 02:14:57,723 - token_manager - INFO - Token valid for 776 seconds
+2025-06-16 02:14:57,726 - verification_utils - INFO - Sending Enrol Suggestion request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/enrol/suggestion
+2025-06-16 02:14:58,505 - verification_utils - ERROR - ABDM API error: 404 - Invalid Timestamp
+2025-06-16 02:14:58,508 - middlewares - INFO - Request completed: GET /verification/enrol-suggestion - Status: 404 - Time: 0.787s
+2025-06-16 02:17:23,039 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 02:17:23,042 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 02:17:23,169 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 02:17:23,231 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 02:17:23,234 - main - INFO - Starting ABDM Integration API server on 0.0.0.0:8002
+2025-06-16 02:17:23,322 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 02:17:23,323 - main - INFO - Starting ABDM Integration API
+2025-06-16 02:17:23,324 - main - INFO - Periodic token refresh task started
+2025-06-16 02:17:23,325 - public_key_service - INFO - Public key refresh scheduler started
+2025-06-16 02:17:23,326 - main - INFO - Public key manager initialized
+2025-06-16 02:17:23,326 - token_manager - INFO - Starting periodic token refresh task (every 0:15:00)
+2025-06-16 02:17:23,327 - token_manager - INFO - Periodic token check triggered
+2025-06-16 02:17:23,327 - token_manager - INFO - Token valid for 630 seconds
+2025-06-16 02:17:23,327 - token_manager - INFO - Periodic token check completed successfully
+2025-06-16 02:17:26,189 - middlewares - INFO - Request started: GET /docs
+2025-06-16 02:17:26,195 - middlewares - INFO - Request completed: GET /docs - Status: 200 - Time: 0.007s
+2025-06-16 02:17:26,425 - middlewares - INFO - Request started: GET /openapi.json
+2025-06-16 02:17:26,451 - middlewares - INFO - Request completed: GET /openapi.json - Status: 200 - Time: 0.026s
+2025-06-16 02:17:41,731 - middlewares - INFO - Request started: GET /verification/enrol-suggestion
+2025-06-16 02:17:41,732 - enrol_suggestion_routes - INFO - Fetching ABHA address suggestions for txnId: b8a401f1-06aa-44c3-932b-29583c375620
+2025-06-16 02:17:41,733 - token_manager - INFO - Token valid for 612 seconds
+2025-06-16 02:17:41,734 - verification_utils - INFO - Request headers: {'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJBbFJiNVdDbThUbTlFSl9JZk85ejA2ajlvQ3Y1MXBLS0ZrbkdiX1RCdkswIn0.eyJleHAiOjE3NTAwMjEwNzMsImlhdCI6MTc1MDAxOTg3MywianRpIjoiNTNiM2JhMmYtMWI0YS00NTQwLWE5MmEtNDdhNGQwMzg3ODAwIiwiaXNzIjoiaHR0cHM6Ly9kZXYubmRobS5nb3YuaW4vYXV0aC9yZWFsbXMvY2VudHJhbC1yZWdpc3RyeSIsInN1YiI6IjRkYWRiMzBlLWJmNjAtNDcwOC1hMDNhLWFiZmJiYjAyMzg1OCIsInR5cCI6IkJlYXJlciIsImF6cCI6IlNCWElEXzAwOTg1MCIsInNlc3Npb25fc3RhdGUiOiI3MmZhZGNmNC1hMjU4LTQwZDItOTJlYy0zZDAyMjYyODYwMzgiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHA6Ly9sb2NhbGhvc3Q6OTAwNyJdLCJyZXNvdXJjZV9hY2Nlc3MiOnsiU0JYSURfMDA5ODUwIjp7InJvbGVzIjpbInVtYV9wcm90ZWN0aW9uIl19fSwic2NvcGUiOiJvcGVuaWQgZW1haWwgcHJvZmlsZSIsImNsaWVudElkIjoiU0JYSURfMDA5ODUwIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJjbGllbnRIb3N0IjoiMTAwLjY1LjE2MC4yMTUiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJzZXJ2aWNlLWFjY291bnQtc2J4aWRfMDA5ODUwIiwiY2xpZW50QWRkcmVzcyI6IjEwMC42NS4xNjAuMjE1In0.HRjtr4i3XMpJAu5uQdJ5LnhaUZYr3bUO9-wTt6GTKsozAf3VWutQum-c4QRacb6J50OILUdT7mmyVJ0W8yzjK7L0qfS2T1A8zcMgHUPdursF2AioA2ECsRgGGZaRVRl-Bw8Mg7nS12Aexq2WlHPmdhhnAKV4hdFviJyn8nmpx-7BtgqzsAKoh8o1cTu6hMIKCVJTqhm3h5ms6_JJfwUzJCLI__yg-jybqKKr80nwxv5NcFwlkRwbrsctZgp19uFiH-kCleetywNh3rX7IVg42aTyDz0BJiuIUFN8XpBUMBwJwU2GQQmOsXI4p3_ghmDyt8GjDXgxY7oBMLUkthGQ_Q', 'REQUEST-ID': '1b1345f9-dd31-4264-af9e-4a8a25952878', 'TIMESTAMP': '2025-06-15T20:47:41Z', 'X-CM-ID': 'sbx', 'Accept': '*/*', 'Connection': 'keep-alive', 'X-Token-Expiry': '2025-06-16T02:27:53'}
+2025-06-16 02:17:41,735 - verification_utils - INFO - Sending Enrol Suggestion request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/enrol/suggestion
+2025-06-16 02:17:42,683 - verification_utils - ERROR - ABDM API error: 404 - Invalid Timestamp
+2025-06-16 02:17:42,687 - middlewares - INFO - Request completed: GET /verification/enrol-suggestion - Status: 404 - Time: 0.956s
+2025-06-16 02:20:12,246 - middlewares - INFO - Request started: POST /verification/initiate-aadhaar-otp
+2025-06-16 02:20:12,256 - aadhaar_routes - INFO - Initiating Aadhaar OTP verification
+2025-06-16 02:20:12,279 - token_manager - INFO - Token valid for 461 seconds
+2025-06-16 02:20:12,280 - verification_utils - INFO - Request headers: {'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJBbFJiNVdDbThUbTlFSl9JZk85ejA2ajlvQ3Y1MXBLS0ZrbkdiX1RCdkswIn0.eyJleHAiOjE3NTAwMjEwNzMsImlhdCI6MTc1MDAxOTg3MywianRpIjoiNTNiM2JhMmYtMWI0YS00NTQwLWE5MmEtNDdhNGQwMzg3ODAwIiwiaXNzIjoiaHR0cHM6Ly9kZXYubmRobS5nb3YuaW4vYXV0aC9yZWFsbXMvY2VudHJhbC1yZWdpc3RyeSIsInN1YiI6IjRkYWRiMzBlLWJmNjAtNDcwOC1hMDNhLWFiZmJiYjAyMzg1OCIsInR5cCI6IkJlYXJlciIsImF6cCI6IlNCWElEXzAwOTg1MCIsInNlc3Npb25fc3RhdGUiOiI3MmZhZGNmNC1hMjU4LTQwZDItOTJlYy0zZDAyMjYyODYwMzgiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHA6Ly9sb2NhbGhvc3Q6OTAwNyJdLCJyZXNvdXJjZV9hY2Nlc3MiOnsiU0JYSURfMDA5ODUwIjp7InJvbGVzIjpbInVtYV9wcm90ZWN0aW9uIl19fSwic2NvcGUiOiJvcGVuaWQgZW1haWwgcHJvZmlsZSIsImNsaWVudElkIjoiU0JYSURfMDA5ODUwIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJjbGllbnRIb3N0IjoiMTAwLjY1LjE2MC4yMTUiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJzZXJ2aWNlLWFjY291bnQtc2J4aWRfMDA5ODUwIiwiY2xpZW50QWRkcmVzcyI6IjEwMC42NS4xNjAuMjE1In0.HRjtr4i3XMpJAu5uQdJ5LnhaUZYr3bUO9-wTt6GTKsozAf3VWutQum-c4QRacb6J50OILUdT7mmyVJ0W8yzjK7L0qfS2T1A8zcMgHUPdursF2AioA2ECsRgGGZaRVRl-Bw8Mg7nS12Aexq2WlHPmdhhnAKV4hdFviJyn8nmpx-7BtgqzsAKoh8o1cTu6hMIKCVJTqhm3h5ms6_JJfwUzJCLI__yg-jybqKKr80nwxv5NcFwlkRwbrsctZgp19uFiH-kCleetywNh3rX7IVg42aTyDz0BJiuIUFN8XpBUMBwJwU2GQQmOsXI4p3_ghmDyt8GjDXgxY7oBMLUkthGQ_Q', 'REQUEST-ID': '5a8b240e-5a8c-4d60-a04e-ca6e93f9bad9', 'TIMESTAMP': '2025-06-15T20:50:12Z', 'X-CM-ID': 'sbx', 'Accept': '*/*', 'Connection': 'keep-alive', 'X-Token-Expiry': '2025-06-16T02:27:53'}
+2025-06-16 02:20:12,280 - verification_utils - INFO - Sending Aadhaar OTP initiation request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/request/otp
+2025-06-16 02:20:13,024 - verification_utils - ERROR - ABDM API error: 404 - Invalid Timestamp
+2025-06-16 02:20:13,027 - middlewares - INFO - Request completed: POST /verification/initiate-aadhaar-otp - Status: 404 - Time: 0.781s
+2025-06-16 02:20:41,059 - middlewares - INFO - Request started: POST /verification/initiate-aadhaar-otp
+2025-06-16 02:20:41,060 - aadhaar_routes - INFO - Initiating Aadhaar OTP verification
+2025-06-16 02:20:41,061 - token_manager - INFO - Token valid for 432 seconds
+2025-06-16 02:20:41,061 - verification_utils - INFO - Request headers: {'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJBbFJiNVdDbThUbTlFSl9JZk85ejA2ajlvQ3Y1MXBLS0ZrbkdiX1RCdkswIn0.eyJleHAiOjE3NTAwMjEwNzMsImlhdCI6MTc1MDAxOTg3MywianRpIjoiNTNiM2JhMmYtMWI0YS00NTQwLWE5MmEtNDdhNGQwMzg3ODAwIiwiaXNzIjoiaHR0cHM6Ly9kZXYubmRobS5nb3YuaW4vYXV0aC9yZWFsbXMvY2VudHJhbC1yZWdpc3RyeSIsInN1YiI6IjRkYWRiMzBlLWJmNjAtNDcwOC1hMDNhLWFiZmJiYjAyMzg1OCIsInR5cCI6IkJlYXJlciIsImF6cCI6IlNCWElEXzAwOTg1MCIsInNlc3Npb25fc3RhdGUiOiI3MmZhZGNmNC1hMjU4LTQwZDItOTJlYy0zZDAyMjYyODYwMzgiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHA6Ly9sb2NhbGhvc3Q6OTAwNyJdLCJyZXNvdXJjZV9hY2Nlc3MiOnsiU0JYSURfMDA5ODUwIjp7InJvbGVzIjpbInVtYV9wcm90ZWN0aW9uIl19fSwic2NvcGUiOiJvcGVuaWQgZW1haWwgcHJvZmlsZSIsImNsaWVudElkIjoiU0JYSURfMDA5ODUwIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJjbGllbnRIb3N0IjoiMTAwLjY1LjE2MC4yMTUiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJzZXJ2aWNlLWFjY291bnQtc2J4aWRfMDA5ODUwIiwiY2xpZW50QWRkcmVzcyI6IjEwMC42NS4xNjAuMjE1In0.HRjtr4i3XMpJAu5uQdJ5LnhaUZYr3bUO9-wTt6GTKsozAf3VWutQum-c4QRacb6J50OILUdT7mmyVJ0W8yzjK7L0qfS2T1A8zcMgHUPdursF2AioA2ECsRgGGZaRVRl-Bw8Mg7nS12Aexq2WlHPmdhhnAKV4hdFviJyn8nmpx-7BtgqzsAKoh8o1cTu6hMIKCVJTqhm3h5ms6_JJfwUzJCLI__yg-jybqKKr80nwxv5NcFwlkRwbrsctZgp19uFiH-kCleetywNh3rX7IVg42aTyDz0BJiuIUFN8XpBUMBwJwU2GQQmOsXI4p3_ghmDyt8GjDXgxY7oBMLUkthGQ_Q', 'REQUEST-ID': '328b3542-dfc1-44df-bb6b-b76e2465f25b', 'TIMESTAMP': '2025-06-15T20:50:41Z', 'X-CM-ID': 'sbx', 'Accept': '*/*', 'Connection': 'keep-alive', 'X-Token-Expiry': '2025-06-16T02:27:53'}
+2025-06-16 02:20:41,063 - verification_utils - INFO - Sending Aadhaar OTP initiation request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/request/otp
+2025-06-16 02:20:41,583 - verification_utils - ERROR - ABDM API error: 404 - Invalid Timestamp
+2025-06-16 02:20:41,585 - middlewares - INFO - Request completed: POST /verification/initiate-aadhaar-otp - Status: 404 - Time: 0.526s
+2025-06-16 02:20:51,492 - middlewares - INFO - Request started: POST /verification/initiate-aadhaar-otp
+2025-06-16 02:20:51,496 - aadhaar_routes - INFO - Initiating Aadhaar OTP verification
+2025-06-16 02:20:51,499 - token_manager - INFO - Token valid for 422 seconds
+2025-06-16 02:20:51,500 - verification_utils - INFO - Request headers: {'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJBbFJiNVdDbThUbTlFSl9JZk85ejA2ajlvQ3Y1MXBLS0ZrbkdiX1RCdkswIn0.eyJleHAiOjE3NTAwMjEwNzMsImlhdCI6MTc1MDAxOTg3MywianRpIjoiNTNiM2JhMmYtMWI0YS00NTQwLWE5MmEtNDdhNGQwMzg3ODAwIiwiaXNzIjoiaHR0cHM6Ly9kZXYubmRobS5nb3YuaW4vYXV0aC9yZWFsbXMvY2VudHJhbC1yZWdpc3RyeSIsInN1YiI6IjRkYWRiMzBlLWJmNjAtNDcwOC1hMDNhLWFiZmJiYjAyMzg1OCIsInR5cCI6IkJlYXJlciIsImF6cCI6IlNCWElEXzAwOTg1MCIsInNlc3Npb25fc3RhdGUiOiI3MmZhZGNmNC1hMjU4LTQwZDItOTJlYy0zZDAyMjYyODYwMzgiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHA6Ly9sb2NhbGhvc3Q6OTAwNyJdLCJyZXNvdXJjZV9hY2Nlc3MiOnsiU0JYSURfMDA5ODUwIjp7InJvbGVzIjpbInVtYV9wcm90ZWN0aW9uIl19fSwic2NvcGUiOiJvcGVuaWQgZW1haWwgcHJvZmlsZSIsImNsaWVudElkIjoiU0JYSURfMDA5ODUwIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJjbGllbnRIb3N0IjoiMTAwLjY1LjE2MC4yMTUiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJzZXJ2aWNlLWFjY291bnQtc2J4aWRfMDA5ODUwIiwiY2xpZW50QWRkcmVzcyI6IjEwMC42NS4xNjAuMjE1In0.HRjtr4i3XMpJAu5uQdJ5LnhaUZYr3bUO9-wTt6GTKsozAf3VWutQum-c4QRacb6J50OILUdT7mmyVJ0W8yzjK7L0qfS2T1A8zcMgHUPdursF2AioA2ECsRgGGZaRVRl-Bw8Mg7nS12Aexq2WlHPmdhhnAKV4hdFviJyn8nmpx-7BtgqzsAKoh8o1cTu6hMIKCVJTqhm3h5ms6_JJfwUzJCLI__yg-jybqKKr80nwxv5NcFwlkRwbrsctZgp19uFiH-kCleetywNh3rX7IVg42aTyDz0BJiuIUFN8XpBUMBwJwU2GQQmOsXI4p3_ghmDyt8GjDXgxY7oBMLUkthGQ_Q', 'REQUEST-ID': '966fd8e8-e5f0-47bd-a4ed-a4399fbee76b', 'TIMESTAMP': '2025-06-15T20:50:51Z', 'X-CM-ID': 'sbx', 'Accept': '*/*', 'Connection': 'keep-alive', 'X-Token-Expiry': '2025-06-16T02:27:53'}
+2025-06-16 02:20:51,502 - verification_utils - INFO - Sending Aadhaar OTP initiation request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/request/otp
+2025-06-16 02:20:52,053 - verification_utils - ERROR - ABDM API error: 404 - Invalid Timestamp
+2025-06-16 02:20:52,056 - middlewares - INFO - Request completed: POST /verification/initiate-aadhaar-otp - Status: 404 - Time: 0.563s
+2025-06-16 02:21:27,050 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 02:21:27,053 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 02:21:27,146 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 02:21:27,183 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 02:21:27,184 - main - INFO - Starting ABDM Integration API server on 0.0.0.0:8002
+2025-06-16 02:21:27,255 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 02:21:27,257 - main - INFO - Starting ABDM Integration API
+2025-06-16 02:21:27,257 - main - INFO - Periodic token refresh task started
+2025-06-16 02:21:27,258 - public_key_service - INFO - Public key refresh scheduler started
+2025-06-16 02:21:27,259 - main - INFO - Public key manager initialized
+2025-06-16 02:21:27,259 - token_manager - INFO - Starting periodic token refresh task (every 0:15:00)
+2025-06-16 02:21:27,260 - token_manager - INFO - Periodic token check triggered
+2025-06-16 02:21:27,260 - token_manager - INFO - Token valid for 386 seconds
+2025-06-16 02:21:27,260 - token_manager - INFO - Periodic token check completed successfully
+2025-06-16 02:21:31,231 - middlewares - INFO - Request started: POST /verification/initiate-aadhaar-otp
+2025-06-16 02:21:31,236 - aadhaar_routes - INFO - Initiating Aadhaar OTP verification
+2025-06-16 02:21:31,249 - token_manager - INFO - Token valid for 382 seconds
+2025-06-16 02:21:31,249 - verification_utils - INFO - Request headers: {'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJBbFJiNVdDbThUbTlFSl9JZk85ejA2ajlvQ3Y1MXBLS0ZrbkdiX1RCdkswIn0.eyJleHAiOjE3NTAwMjEwNzMsImlhdCI6MTc1MDAxOTg3MywianRpIjoiNTNiM2JhMmYtMWI0YS00NTQwLWE5MmEtNDdhNGQwMzg3ODAwIiwiaXNzIjoiaHR0cHM6Ly9kZXYubmRobS5nb3YuaW4vYXV0aC9yZWFsbXMvY2VudHJhbC1yZWdpc3RyeSIsInN1YiI6IjRkYWRiMzBlLWJmNjAtNDcwOC1hMDNhLWFiZmJiYjAyMzg1OCIsInR5cCI6IkJlYXJlciIsImF6cCI6IlNCWElEXzAwOTg1MCIsInNlc3Npb25fc3RhdGUiOiI3MmZhZGNmNC1hMjU4LTQwZDItOTJlYy0zZDAyMjYyODYwMzgiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHA6Ly9sb2NhbGhvc3Q6OTAwNyJdLCJyZXNvdXJjZV9hY2Nlc3MiOnsiU0JYSURfMDA5ODUwIjp7InJvbGVzIjpbInVtYV9wcm90ZWN0aW9uIl19fSwic2NvcGUiOiJvcGVuaWQgZW1haWwgcHJvZmlsZSIsImNsaWVudElkIjoiU0JYSURfMDA5ODUwIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJjbGllbnRIb3N0IjoiMTAwLjY1LjE2MC4yMTUiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJzZXJ2aWNlLWFjY291bnQtc2J4aWRfMDA5ODUwIiwiY2xpZW50QWRkcmVzcyI6IjEwMC42NS4xNjAuMjE1In0.HRjtr4i3XMpJAu5uQdJ5LnhaUZYr3bUO9-wTt6GTKsozAf3VWutQum-c4QRacb6J50OILUdT7mmyVJ0W8yzjK7L0qfS2T1A8zcMgHUPdursF2AioA2ECsRgGGZaRVRl-Bw8Mg7nS12Aexq2WlHPmdhhnAKV4hdFviJyn8nmpx-7BtgqzsAKoh8o1cTu6hMIKCVJTqhm3h5ms6_JJfwUzJCLI__yg-jybqKKr80nwxv5NcFwlkRwbrsctZgp19uFiH-kCleetywNh3rX7IVg42aTyDz0BJiuIUFN8XpBUMBwJwU2GQQmOsXI4p3_ghmDyt8GjDXgxY7oBMLUkthGQ_Q', 'REQUEST-ID': '8e635c7a-d8b1-4434-b68f-289f9cd16889', 'TIMESTAMP': '2025-06-15T20:51:31Z', 'X-CM-ID': 'sbx', 'Accept': '*/*', 'Connection': 'keep-alive', 'X-Token-Expiry': '2025-06-16T02:27:53'}
+2025-06-16 02:21:31,250 - verification_utils - INFO - Sending Aadhaar OTP initiation request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/request/otp
+2025-06-16 02:21:31,992 - verification_utils - ERROR - ABDM API error: 404 - Invalid Timestamp
+2025-06-16 02:21:31,996 - middlewares - INFO - Request completed: POST /verification/initiate-aadhaar-otp - Status: 404 - Time: 0.765s
+2025-06-16 02:21:45,084 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 02:21:45,088 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 02:21:45,208 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 02:21:45,250 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 02:21:45,251 - main - INFO - Starting ABDM Integration API server on 0.0.0.0:8002
+2025-06-16 02:21:45,332 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 02:21:45,335 - main - INFO - Starting ABDM Integration API
+2025-06-16 02:21:45,335 - main - INFO - Periodic token refresh task started
+2025-06-16 02:21:45,336 - public_key_service - INFO - Public key refresh scheduler started
+2025-06-16 02:21:45,337 - main - INFO - Public key manager initialized
+2025-06-16 02:21:45,337 - token_manager - INFO - Starting periodic token refresh task (every 0:15:00)
+2025-06-16 02:21:45,337 - token_manager - INFO - Periodic token check triggered
+2025-06-16 02:21:45,338 - token_manager - INFO - Token valid for 368 seconds
+2025-06-16 02:21:45,338 - token_manager - INFO - Periodic token check completed successfully
+2025-06-16 02:21:48,688 - middlewares - INFO - Request started: POST /verification/initiate-aadhaar-otp
+2025-06-16 02:21:48,699 - aadhaar_routes - INFO - Initiating Aadhaar OTP verification
+2025-06-16 02:21:48,725 - token_manager - INFO - Token valid for 365 seconds
+2025-06-16 02:21:48,726 - verification_utils - INFO - Sending Aadhaar OTP initiation request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/request/otp
+2025-06-16 02:21:50,987 - aadhaar_routes - INFO - OTP initiation successful, txnId: 17c8926e-a781-4d70-9ac0-d2cf6674ed85
+2025-06-16 02:21:50,991 - middlewares - INFO - Request completed: POST /verification/initiate-aadhaar-otp - Status: 200 - Time: 2.303s
+2025-06-16 02:22:28,718 - middlewares - INFO - Request started: POST /verification/enroll-by-aadhaar
+2025-06-16 02:22:28,720 - aadhaar_routes - INFO - Processing ABHA enrollment request with txnId: 17c8926e-a781-4d70-9ac0-d2cf6674ed85
+2025-06-16 02:22:28,721 - token_manager - INFO - Token valid for 325 seconds
+2025-06-16 02:22:28,722 - verification_utils - INFO - Sending ABHA enrollment request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/enrol/byAadhaar
+2025-06-16 02:22:30,725 - aadhaar_routes - INFO - ABHA enrollment successful
+2025-06-16 02:22:30,731 - abha_profile_service - INFO - ABHA profile saved successfully for 91-6464-3246-8064
+2025-06-16 02:22:30,733 - aadhaar_routes - INFO - ABHA profile saved for 91-6464-3246-8064
+2025-06-16 02:22:30,736 - middlewares - INFO - Request completed: POST /verification/enroll-by-aadhaar - Status: 200 - Time: 2.018s
+2025-06-16 02:22:48,635 - middlewares - INFO - Request started: POST /verification/initiate-mobile-otp
+2025-06-16 02:22:48,639 - mobile_routes - INFO - Initiating Mobile Update OTP request
+2025-06-16 02:22:48,641 - token_manager - INFO - Token valid for 305 seconds
+2025-06-16 02:22:48,642 - verification_utils - INFO - Sending Mobile Update OTP request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/request/otp
+2025-06-16 02:22:50,915 - middlewares - INFO - Request completed: POST /verification/initiate-mobile-otp - Status: 200 - Time: 2.280s
+2025-06-16 02:23:15,812 - middlewares - INFO - Request started: POST /verification/auth-by-mobile-otp
+2025-06-16 02:23:15,814 - mobile_routes - INFO - Authenticating Mobile OTP for linking mobile to ABHA
+2025-06-16 02:23:15,815 - token_manager - INFO - Token valid for 278 seconds
+2025-06-16 02:23:15,815 - verification_utils - INFO - Sending Mobile Update Auth By OTP request to https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/auth/byAbdm
+2025-06-16 02:23:18,039 - middlewares - INFO - Request completed: POST /verification/auth-by-mobile-otp - Status: 200 - Time: 2.228s
+2025-06-16 02:24:03,815 - middlewares - INFO - Request started: POST /verification/request-email-verification-link
+2025-06-16 02:24:03,819 - email_routes - INFO - Requesting email verification link
+2025-06-16 02:24:03,822 - token_manager - INFO - Token valid for 230 seconds
+2025-06-16 02:24:03,822 - verification_utils - INFO - Sending Email Verification Link request to https://abhasbx.abdm.gov.in/abha/api/v3/profile/account/request/emailVerificationLink
+2025-06-16 02:24:05,399 - middlewares - INFO - Request completed: POST /verification/request-email-verification-link - Status: 200 - Time: 1.582s
+2025-06-16 02:24:14,826 - middlewares - INFO - Request started: GET /verification/enrol-suggestion
+2025-06-16 02:24:14,827 - enrol_suggestion_routes - INFO - Fetching ABHA address suggestions for txnId: b8a401f1-06aa-44c3-932b-29583c375620
+2025-06-16 02:24:14,827 - enrol_suggestion_routes - ERROR - Unexpected error in get_enrol_suggestion: call_abdm_api() got an unexpected keyword argument 'method'
+2025-06-16 02:24:14,828 - middlewares - INFO - Request completed: GET /verification/enrol-suggestion - Status: 500 - Time: 0.002s
+2025-06-16 02:24:20,173 - middlewares - INFO - Request started: GET /verification/enrol-suggestion
+2025-06-16 02:24:20,175 - enrol_suggestion_routes - INFO - Fetching ABHA address suggestions for txnId: b8a401f1-06aa-44c3-932b-29583c375620
+2025-06-16 02:24:20,176 - enrol_suggestion_routes - ERROR - Unexpected error in get_enrol_suggestion: call_abdm_api() got an unexpected keyword argument 'method'
+2025-06-16 02:24:20,178 - middlewares - INFO - Request completed: GET /verification/enrol-suggestion - Status: 500 - Time: 0.006s
+2025-06-16 02:29:25,720 - middlewares - INFO - Request started: GET /docs
+2025-06-16 02:29:25,723 - middlewares - INFO - Request completed: GET /docs - Status: 200 - Time: 0.003s
+2025-06-16 02:29:26,033 - middlewares - INFO - Request started: GET /openapi.json
+2025-06-16 02:29:26,060 - middlewares - INFO - Request completed: GET /openapi.json - Status: 200 - Time: 0.026s
+2025-06-16 02:30:26,945 - middlewares - INFO - Request started: GET /verification/enrol-suggestion
+2025-06-16 02:30:26,947 - enrol_suggestion_routes - INFO - Fetching ABHA address suggestions for txnId: 17c8926e-a781-4d70-9ac0-d2cf6674ed85
+2025-06-16 02:30:26,947 - enrol_suggestion_routes - ERROR - Unexpected error in get_enrol_suggestion: call_abdm_api() got an unexpected keyword argument 'method'
+2025-06-16 02:30:26,949 - middlewares - INFO - Request completed: GET /verification/enrol-suggestion - Status: 500 - Time: 0.005s
+2025-06-16 02:31:54,268 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 02:31:54,272 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 02:31:54,391 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 02:31:54,485 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 02:31:54,486 - main - INFO - Starting ABDM Integration API server on 0.0.0.0:8002
+2025-06-16 02:31:54,624 - token_manager - INFO - ABDMTokenManager initialized
+2025-06-16 02:31:54,627 - main - INFO - Starting ABDM Integration API
+2025-06-16 02:31:54,628 - main - INFO - Periodic token refresh task started
+2025-06-16 02:31:54,631 - public_key_service - INFO - Public key refresh scheduler started
+2025-06-16 02:31:54,632 - main - INFO - Public key manager initialized
+2025-06-16 02:31:54,632 - token_manager - INFO - Starting periodic token refresh task (every 0:15:00)
+2025-06-16 02:31:54,633 - token_manager - INFO - Periodic token check triggered
+2025-06-16 02:31:54,634 - token_manager - INFO - Token expired or expiring soon. Time left: 0 seconds
+2025-06-16 02:31:54,635 - token_manager - INFO - Token needs refresh
+2025-06-16 02:31:54,635 - token_manager - INFO - Attempting to use refresh token
+2025-06-16 02:31:54,635 - token_manager - INFO - Refreshing token for SBXID_009850
+2025-06-16 02:31:55,195 - token_manager - ERROR - Failed to refresh token: 401 - {"error":{"code":2500,"message":"Invalid client secret"}}
+2025-06-16 02:31:55,195 - token_manager - ERROR - Unexpected error refreshing token: Failed to refresh token: 401 - {"error":{"code":2500,"message":"Invalid client secret"}} - Details: {'status_code': 401}
+2025-06-16 02:31:55,196 - token_manager - WARNING - Refresh token failed, trying client credentials
+2025-06-16 02:31:55,198 - token_manager - INFO - Getting completely new token
+2025-06-16 02:31:55,200 - token_manager - INFO - Fetching new token for SBXID_009850

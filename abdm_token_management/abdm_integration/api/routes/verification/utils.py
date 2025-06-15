@@ -1,9 +1,8 @@
-# api/routes/verification/utils.py
 import uuid
 from datetime import datetime
 from fastapi import HTTPException
 import requests
-from typing import Dict, Any
+from typing import Dict, Any, Optional
 
 from config.logging_config import setup_logger
 from config.settings import settings
@@ -48,18 +47,28 @@ def encrypt_data(data: str, purpose: str) -> str:
             detail=f"Failed to encrypt {purpose}: {str(e)}"
         )
 
-def call_abdm_api(endpoint: str, payload: Dict[str, Any], operation_name: str) -> Dict[str, Any]:
-    """Make a call to ABDM API with error handling"""
+def call_abdm_api(
+    endpoint: str,
+    payload: Optional[Dict[str, Any]],
+    operation_name: str,
+    extra_headers: Optional[Dict[str, str]] = None,
+    method: str = "POST"   # <-- Add this line
+) -> Dict[str, Any]:
+    """
+    Make a call to ABDM API with error handling.
+    Allows injecting extra headers (e.g., 'X-token').
+    Supports both POST and GET methods.
+    """
     headers = prepare_abdm_headers()
+    if extra_headers:
+        headers.update(extra_headers)
     logger.info(f"Sending {operation_name} request to {endpoint}")
     
     try:
-        response = requests.post(
-            endpoint,
-            headers=headers,
-            json=payload,
-            timeout=30
-        )
+        if method.upper() == "GET":
+            response = requests.get(endpoint, headers=headers, timeout=30)
+        else:
+            response = requests.post(endpoint, headers=headers, json=payload, timeout=30)
         
         logger.debug(f"ABDM API response status: {response.status_code}")
         
@@ -78,7 +87,6 @@ def call_abdm_api(endpoint: str, payload: Dict[str, Any], operation_name: str) -
                 detail=f"ABDM API error: {error_detail}"
             )
         
-        # Return the JSON response
         return response.json()
         
     except requests.RequestException as e:

@@ -83,7 +83,7 @@ async def initiate_aadhaar_otp(request: AadhaarOtpRequest = Body(...)):
         )
 
 @router.post("/enroll-by-aadhaar",
-         response_model=AbhaEnrollmentResponse,
+         #response_model=AbhaEnrollmentResponse,
          summary="Complete ABHA enrollment with Aadhaar OTP",
          description="Completes ABHA enrollment process after OTP verification")
 async def enroll_by_aadhaar(request: AbhaEnrollmentRequest = Body(...)):
@@ -151,22 +151,17 @@ async def enroll_by_aadhaar(request: AbhaEnrollmentRequest = Body(...)):
             payload, 
             "ABHA enrollment"
         )
-        
+
         # 5. Process successful response and save complete profile data
         logger.info(f"ABHA enrollment successful")
-        
+
         # Save the complete ABHA profile data
         if "ABHAProfile" in response_data:
             abha_profile_manager.save_profile(response_data)
             logger.info(f"ABHA profile saved for {response_data.get('ABHAProfile', {}).get('ABHANumber', 'unknown')}")
-        
-        # Return summarized response to client
-        return {
-            "status": "success",
-            "message": response_data.get("message", "ABHA enrollment completed successfully"),
-            "abhaDetails": response_data.get("ABHAProfile", {}),
-            "txnId": response_data.get("txnId")
-        }
+
+        # Return the FULL response as-is
+        return response_data
             
     except HTTPException:
         # Re-raise HTTP exceptions

@@ -48,3 +48,22 @@ class MobileOtpResponse(BaseModel):
     txnId: str
     message: str
     status: str = "success"
+    
+
+class EmailVerificationRequest(BaseModel):
+    email: str = Field(..., description="User's email address to verify")
+    x_token: str = Field(..., description="X-token for ABDM API header")
+
+class EmailVerificationResponse(BaseModel):
+    txnId: str
+    message: str
+    status: str = "success"
+    
+
+class EnrolSuggestionRequest(BaseModel):
+    txnId: str = Field(..., description="Transaction ID for ABHA suggestion")
+
+class EnrolSuggestionResponse(BaseModel):
+    txnId: str
+    abhaAddressList: List[str]
+    status: str = "success"
