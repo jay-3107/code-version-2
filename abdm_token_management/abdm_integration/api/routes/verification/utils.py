@@ -3,6 +3,8 @@ from datetime import datetime
 from fastapi import HTTPException
 import requests
 from typing import Dict, Any, Optional
+from datetime import datetime, timezone
+
 
 from config.logging_config import setup_logger
 from config.settings import settings
@@ -16,16 +18,15 @@ token_manager = ABDMTokenManager()
 public_key_manager = ABDMPublicKeyManager()
 
 def prepare_abdm_headers() -> Dict[str, str]:
-    """Prepare headers for ABDM API calls with valid token"""
+    """Prepare headers for ABDM API calls with valid token and ISO 8601 timestamp with milliseconds and Z."""
     try:
         headers = token_manager.get_headers()
-        # Add/override standard headers
         headers["Content-Type"] = "application/json"
         headers["REQUEST-ID"] = str(uuid.uuid4())
-        headers["TIMESTAMP"] = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%S.%fZ')
+        # ISO 8601 with milliseconds and Z (e.g. 2025-06-15T21:31:46.123Z)
+        headers["TIMESTAMP"] = datetime.utcnow().isoformat(timespec='milliseconds') + 'Z'
         headers["Accept"] = "*/*"
         headers["Connection"] = "keep-alive"
-        
         return headers
     except Exception as e:
         logger.error(f"Failed to prepare headers: {str(e)}")
